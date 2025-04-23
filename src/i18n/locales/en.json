@@ -1,0 +1,13 @@
+{
+    "greeting": "Hello",
+    "heroSection":"Welcome to our website!",
+    "language": "Language",
+
+    "site": { "name": "MySite" },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact"
+  }
+  }
+  
