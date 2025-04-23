@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
 import { NavBar } from "./Compos/NavBar";
 import { Button } from "./Compos/Button";
+import Hero from "./Compos/Hero";
 
 //testing
 
@@ -17,8 +18,12 @@ function App() {
   return (
     <>
       <NavBar />
+        <div className="w-full ">
+        <Hero/>
+        </div>
       <div className="flex flex-col items-center justify-center min-h-screen p-4 gap-4">
         <h1 className="text-3xl font-bold">{t("greeting")}</h1>
+
 
         <div className="flex gap-2">
           <Button onClick={() => i18n.changeLanguage("ar")}>Arabic</Button>

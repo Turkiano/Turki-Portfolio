@@ -8,6 +8,15 @@
     "home": "Home",
     "about": "About",
     "contact": "Contact"
+  },
+
+
+  "hero": {
+    "title": "Welcome to my portfolio",
+    "description": "Explore my projects and skills",
+    "subtitle": "From concept to conversion - marketing that performs.",
+    "primaryAction": "Projects",
+    "secondaryAction": "Contact me"
   }
   }
   
