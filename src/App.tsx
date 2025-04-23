@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import { NavBar } from "./Compos/NavBar";
 import { Button } from "./Compos/Button";
 
+//testing
+
 function App() {
   const { t, i18n } = useTranslation();
 
