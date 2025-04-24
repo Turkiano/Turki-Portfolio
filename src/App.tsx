@@ -23,7 +23,7 @@ function App() {
         <Hero />
       </div>
       <div className="w-auto mx-auto text-center mt-10">
-        <h2 className="text-3xl font-bold ">Multimedia Project</h2>
+        <h2 className="text-3xl font-bold ">{t("ProjectsTaps.title")}</h2>
         <ProjectsTaps />
       </div>
       <div className="flex flex-col items-center justify-center min-h-screen p-4 gap-4">

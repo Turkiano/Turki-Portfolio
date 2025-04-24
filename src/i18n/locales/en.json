@@ -3,7 +3,7 @@
     "heroSection":"Welcome to our website!",
     "language": "Language",
 
-    "site": { "name": "MySite" },
+    "site": { "name": "Turki Saeed" },
   "nav": {
     "home": "Home",
     "about": "About",
@@ -17,6 +17,56 @@
     "subtitle": "From concept to conversion - marketing that performs.",
     "primaryAction": "Projects",
     "secondaryAction": "Contact me"
+  },
+
+  "ProjectsTaps": {
+    "title": "Multimedia Projects",
+    "tap01": "Branding",
+    "tap02": "Research",
+    "tap03": "Content",
+    "tap04": "VFX",
+    "tap05": "Programing"
+
+  },
+
+  "VfxProjects": {
+    "title": "Visual Effects Artist",
+    "paragraph": "With over a decade of hands-on experience in creative industry, managed to build a solid reputation as a Motion Graphic Artist and VFX specialist. At 2012, I started my intership at PixelPost agency, in Malaysia, crafted engaging visual stories and dynamic on-screen graphics using Adobe After Effects, Premiere Pro, and 3ds Max—transforming concepts into polished animations that captivate audiences.",
+    "progress01": "Adobe Premiere ",
+    "progress02": "Adobe After Effect",
+    "progress03": "3D Max - Modeling",
+    "progress04": "3D Max - Texturing",
+    "progress05": "3D Max - Animation",
+    "progress06": "Zbrush",
+    "progress07": "Audio Editing"
+  },
+
+  "BrandingProjects":{
+    "title": "Branding & Digital Assets",
+    "paragraph": "Graduating with a Bachelor’s in Creative Multimedia from Limkokwing University, launched my career in Jeddah in 2015 since I finished my MBA. In 2021 I relocated to Riyadh city to join Tajreed Agency as a Graphic Designer—crafting eye-catching layouts and branding assets with Adobe Illustrator, Photoshop, and InDesign, where my blend of creative vision and organizational skill quickly earned me a promotion to be a Project Manager. Today, I oversee end-to-end project delivery—coordinating teams, managing timelines, and ensuring every design meets both client goals and high-quality standards. A showcase of my key projects featured below:",
+    "progress01": "Designing & Branding",
+    "progress02": "Market Research & Analysis",
+    "progress03": "Digital Assets Management",
+    "progress04": "Problem-Solving & Decision-Making",
+    "progress05": "Planning & Organization",
+    "progress06": "Negotiation & Persuasion",
+    "progress07": "Emotional Intelligence"
+
+  },
+
+  "ContentProjects":{
+    "title": "Branding & Digital Assets",
+    "paragraph": "Graduating with a Bachelor’s in Creative Multimedia from Limkokwing University, launched my career in Jeddah in 2015 since I finished my MBA. In 2021 I relocated to Riyadh city to join Tajreed Agency as a Graphic Designer—crafting eye-catching layouts and branding assets with Adobe Illustrator, Photoshop, and InDesign, where my blend of creative vision and organizational skill quickly earned me a promotion to be a Project Manager. Today, I oversee end-to-end project delivery—coordinating teams, managing timelines, and ensuring every design meets both client goals and high-quality standards. A showcase of my key projects featured below:",
+    "progress01": "Designing & Branding",
+    "progress02": "Market Research & Analysis",
+    "progress03": "Digital Assets Management",
+    "progress04": "Problem-Solving & Decision-Making",
+    "progress05": "Planning & Organization",
+    "progress06": "Negotiation & Persuasion",
+    "progress07": "Emotional Intelligence"
+
   }
+
+
   }
   

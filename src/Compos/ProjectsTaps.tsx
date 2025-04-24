@@ -1,21 +1,22 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { VfxProjects } from "./VfxProjects";
+import { useTranslation } from "react-i18next";
+import { BrandingProjects } from "./BrandingProjects";
 
 export function ProjectsTaps() {
+  const { t } = useTranslation();
+
   return (
-    <Tabs defaultValue="Branding" className="w-[400px] mx-auto mt-5">
+    <Tabs defaultValue="Branding" className="w-full mx-auto mt-5">
       <TabsList className="flex justify-center space-x-4 w-auto mx-auto">
-        <TabsTrigger value="Branding">Branding</TabsTrigger>
-        <TabsTrigger value="Reasearch">Reasearch</TabsTrigger>
-        <TabsTrigger value="content">Content</TabsTrigger>
-        <TabsTrigger value="vfx">VFX</TabsTrigger>
-        <TabsTrigger value="Programing">Programing</TabsTrigger>
-
-
-
+        <TabsTrigger value="Branding"> {t("ProjectsTaps.tap01")}</TabsTrigger>
+        <TabsTrigger value="Reasearch">{t("ProjectsTaps.tap02")}</TabsTrigger>
+        <TabsTrigger value="content">{t("ProjectsTaps.tap03")}</TabsTrigger>
+        <TabsTrigger value="vfx">{t("ProjectsTaps.tap04")}</TabsTrigger>
+        <TabsTrigger value="Programing">{t("ProjectsTaps.tap05")}</TabsTrigger>
       </TabsList>
-      <TabsContent value="Branding">
-        Make changes to your Brand Management here.
+      <TabsContent value="Branding" className="w-full ">
+       <BrandingProjects />
       </TabsContent>
       <TabsContent value="Programing">Change your Programing here.</TabsContent>
       <TabsContent value="Research">Change your Research here.</TabsContent>
@@ -23,9 +24,6 @@ export function ProjectsTaps() {
       <TabsContent value="vfx">
         <VfxProjects />
       </TabsContent>
-
-
-
     </Tabs>
   );
 }
