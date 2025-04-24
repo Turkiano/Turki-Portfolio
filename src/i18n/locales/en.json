@@ -54,18 +54,19 @@
 
   },
 
-  "ContentProjects":{
-    "title": "Branding & Digital Assets",
-    "paragraph": "Graduating with a Bachelor’s in Creative Multimedia from Limkokwing University, launched my career in Jeddah in 2015 since I finished my MBA. In 2021 I relocated to Riyadh city to join Tajreed Agency as a Graphic Designer—crafting eye-catching layouts and branding assets with Adobe Illustrator, Photoshop, and InDesign, where my blend of creative vision and organizational skill quickly earned me a promotion to be a Project Manager. Today, I oversee end-to-end project delivery—coordinating teams, managing timelines, and ensuring every design meets both client goals and high-quality standards. A showcase of my key projects featured below:",
-    "progress01": "Designing & Branding",
-    "progress02": "Market Research & Analysis",
-    "progress03": "Digital Assets Management",
-    "progress04": "Problem-Solving & Decision-Making",
-    "progress05": "Planning & Organization",
-    "progress06": "Negotiation & Persuasion",
-    "progress07": "Emotional Intelligence"
+"ContentProjects": {
+  "title": "Content Creator",
+  "paragraph": "Passionate about turning ideas into impactful digital content. I started my journey in June 2021 as a Graphic Designer and quickly grew into a strategic role, leading content teams and managing projects for clients across various industries.\n\n",
+  "paragraph02": "From brainstorming sessions to client meetings, I handle the full cycle of content creation—planning, approvals, and scheduling—while keeping deadlines on track. I combine creativity with organization, helping brands tell their story in the most effective and engaging way.",
+  "progress01": "Writing & Copywriting",
+  "progress02": "Content Planning",
+  "progress03": "Reading Metrics (Analytics)",
+  "progress04": "Design Software (Adobe Suite)",
+  "progress05": "Scheduling Tools",
+  "progress06": "Understanding Algorithms",
+  "progress07": "Search Engine Optimization (SEO)"
+}
 
-  }
 
 
   }

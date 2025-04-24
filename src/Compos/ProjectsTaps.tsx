@@ -2,6 +2,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { VfxProjects } from "./VfxProjects";
 import { useTranslation } from "react-i18next";
 import { BrandingProjects } from "./BrandingProjects";
+import { ContentProjects } from "./ContentProjects";
 
 export function ProjectsTaps() {
   const { t } = useTranslation();
@@ -20,7 +21,9 @@ export function ProjectsTaps() {
       </TabsContent>
       <TabsContent value="Programing">Change your Programing here.</TabsContent>
       <TabsContent value="Research">Change your Research here.</TabsContent>
-      <TabsContent value="content">Change your content here.</TabsContent>
+      <TabsContent value="content">
+        <ContentProjects/>
+      </TabsContent>
       <TabsContent value="vfx">
         <VfxProjects />
       </TabsContent>
