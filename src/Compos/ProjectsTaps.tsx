@@ -3,6 +3,7 @@ import { VfxProjects } from "./VfxProjects";
 import { useTranslation } from "react-i18next";
 import { BrandingProjects } from "./BrandingProjects";
 import { ContentProjects } from "./ContentProjects";
+import { ProgrammingProjects } from "./ProgramingProjects";
 
 export function ProjectsTaps() {
   const { t } = useTranslation();
@@ -19,7 +20,9 @@ export function ProjectsTaps() {
       <TabsContent value="Branding" className="w-full ">
        <BrandingProjects />
       </TabsContent>
-      <TabsContent value="Programing">Change your Programing here.</TabsContent>
+      <TabsContent value="Programing">
+        <ProgrammingProjects/>
+      </TabsContent>
       <TabsContent value="Research">Change your Research here.</TabsContent>
       <TabsContent value="content">
         <ContentProjects/>

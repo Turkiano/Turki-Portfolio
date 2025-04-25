@@ -24,6 +24,10 @@ function App() {
       </div>
       <div className="w-auto mx-auto text-center mt-10">
         <h2 className="text-3xl font-bold ">{t("ProjectsTaps.title")}</h2>
+        <p className="text-base leading-relaxed w-1/2 mx-auto pt-3 md: w-full">
+          {t("ProjectsTaps.paragraph")}
+          <br />
+        </p>
         <ProjectsTaps />
       </div>
       <div className="flex flex-col items-center justify-center min-h-screen p-4 gap-4">
