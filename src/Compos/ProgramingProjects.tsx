@@ -29,7 +29,7 @@ export function ProgrammingProjects() {
 
           {/* Right column: your skill bars */}
           <div className="space-y-4">
-            {[53, 88, 95, 73, 85, 77, 89].map((value, i) => (
+            {[78, 85, 63, 87, 59, 93].map((value, i) => (
               <div key={i} className="space-y-1">
                 <div className="flex items-center justify-between">
                   <p>{t(`ProgramingProjects.progress0${i + 1}`)}</p>

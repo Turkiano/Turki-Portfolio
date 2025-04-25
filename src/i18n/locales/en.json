@@ -7,6 +7,7 @@
   "nav": {
     "home": "Home",
     "about": "About",
+    "projects": "Projects",
     "contact": "Contact"
   },
 
@@ -72,13 +73,13 @@
   "title": "Full Stack Software Developer",
   "paragraph": "In early 2024, I seized the opportunity to deepen my craft by joining the Saudi Digital Academy’s intensive program delivered in partnership with Finland’s Integrify Academy from February through May. There, I dove headfirst into modern front-end development with JavaScript, TypeScript, and React.js, honing my ability to create dynamic, responsive user interfaces. At the same time, I collaborated on architecting and deploying a robust C# and ASP.NET Core backend complete with Npgsql-powered PostgreSQL integration, where I learned to design and document clean, scalable APIs and embraced industry-standard version control workflows on GitHub.\n\n",
   "paragraph02": "This immersive experience sharpened both my technical expertise and my passion for building end-to-end web solutions. Below, you’ll find four flagship projects that illustrate how I’ve translated these skills into real-world impact as a full-stack developer.",
-  "progress01": "Writing & Copywriting",
-  "progress02": "Content Planning",
-  "progress03": "Reading Metrics (Analytics)",
-  "progress04": "Design Software (Adobe Suite)",
-  "progress05": "Scheduling Tools",
-  "progress06": "Understanding Algorithms",
-  "progress07": "Search Engine Optimization (SEO)"
+  "progress01": "Frontend Development (TypeScript, React.js, ShadcnUI)",
+  "progress02": "Backend Development (C#, EF Core, ASP.Net)",
+  "progress03": "Database Management (LINQ, PostgreSQL, Subabase)",
+  "progress04": "Git & Github",
+  "progress05": "Postman",
+  "progress06": "WordPress"
+  
 }
 
 

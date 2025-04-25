@@ -1,4 +1,3 @@
-import React from "react";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import {
@@ -16,6 +15,7 @@ export function NavBar() {
   const navItems = [
     { to: "/", label: t("nav.home") },
     { to: "/about", label: t("nav.about") },
+    { to: "/projects", label: t("nav.projects") },
     { to: "/contact", label: t("nav.contact") },
   ];
 
