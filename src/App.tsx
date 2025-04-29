@@ -6,7 +6,6 @@ import Hero from "./Compos/Hero";
 import { ProjectsTaps } from "./Compos/ProjectsTaps";
 import { ContactMe } from "./Compos/ContactMe";
 import AboutMe from "./Compos/AboutMe";
-import { Chart } from "./Compos/Chart";
 
 //testing
 

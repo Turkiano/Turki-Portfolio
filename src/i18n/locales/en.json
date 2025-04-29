@@ -20,6 +20,57 @@
     "secondaryAction": "Contact me"
   },
 
+  "chart": {
+    "title": "Timeline {{start}} – {{end}}",
+    "subtitle": "Education vs. Career performance over actual years."
+  },
+  "legend": {
+    "education": "Education",
+    "career":    "Career"
+  },
+  "axis": {
+    "year": "Year",
+    "rank": "Rank"
+  },
+
+
+  "tooltip": {
+    "year": "Year: {{year}}",
+    "educationTitle": "Education",
+    "careerTitle": "Career"
+  },
+
+  "eduPeriods": {
+    "2002 – 2005": "2002 – 2005",
+    "2006 – 2007": "2006 – 2007",
+    "2007 – 2011": "2007 – 2011",
+    "2013 – 2015": "2013 – 2015",
+    "Feb – May 2024": "Feb – May 2024"
+  },
+  "eduTitles": {
+    "Arabic High School":    "Arabic High School",
+    "English Course":         "English Course",
+    "Bachelor Degree":        "Bachelor Degree",
+    "MBA":                    "MBA",
+    "Full-Stack Developer":   "Full-Stack Developer"
+  },
+
+  "jobPeriods": {
+    "Feb – Apr 2011":         "Feb – Apr 2011",
+    "Jun – Dec 2012":         "Jun – Dec 2012",
+    "Mar 2017 – Jan 2019":    "Mar 2017 – Jan 2019",
+    "Mar – May 2019":         "Mar – May 2019",
+    "Feb – Nov 2020":         "Feb – Nov 2020",
+    "Jun 2021 – Mar 2023":    "Jun 2021 – Mar 2023"
+  },
+  "jobTitles": {
+    "VFX Artist":                    "VFX Artist",
+    "Assisting Production Manager":  "Assisting Production Manager",
+    "Advertising Coordinator":       "Advertising Coordinator",
+    "Advertising Designer":          "Advertising Designer",
+    "Social Media Manager":          "Social Media Manager",
+    "Graphic Designer":              "Graphic Designer"
+  },
   "ProjectsTaps": {
     "title": "Multimedia Projects",
     "paragraph": "I’ve honed the versatility to wear multiple hats, shifting between different roles in the creative industry. ",

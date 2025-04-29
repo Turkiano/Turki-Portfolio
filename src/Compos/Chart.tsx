@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
+
 import {
   Legend,
   Line,
@@ -99,23 +101,30 @@ const raw = [
 
 // ─── 2) SORT CHRONOLOGICALLY ────────────────────────────────────────────────
 const data = raw.slice().sort((a, b) => a.year - b.year);
-
 export function Chart() {
+  const { t, i18n } = useTranslation();
   const [hover, setHover] = useState<any>(null);
 
+  // re-use your sorted `data` array here…
+  // (omitted for brevity)
+
+  // for dynamic years in the title:
+  const startYear = 2000;
+  const endYear = 2026;
+
   return (
-    <div className="w-full bg-gray-200 text-black p-6 rounded-lg">
-      <h2 className="text-2xl font-bold mb-2">Timeline 2000 - 2026</h2>
-      <p className="text-gray-600 mb-4">
-         Education vs. Career performance over actual years.
-      </p>
+    <div className="w-full text-black p-6 rounded-lg">
+      <h2 className="text-2xl font-bold mb-1">
+        {t("chart.title", { start: startYear, end: endYear })}
+      </h2>
+      <p className="text-gray-600 mb-4">{t("chart.subtitle")}</p>
 
       <div className="h-[300px]">
         <ResponsiveContainer width="100%" height="100%">
           <ChartContainer
             config={{
-              education: { label: "Education Rank", color: "#888888" },
-              career: { label: "Career Rank", color: "#000000" },
+              education: { label: t("legend.education"), color: "#888888" },
+              career: { label: t("legend.career"), color: "#000000" },
             }}
           >
             <LineChart
@@ -126,23 +135,23 @@ export function Chart() {
               }
               onMouseLeave={() => setHover(null)}
             >
-              {/* X-axis: actual years */}
+              {/* X-axis */}
               <XAxis
                 dataKey="year"
                 type="number"
-                domain={[2000, 2025]}
+                domain={[startYear, endYear]}
                 tickCount={6}
                 tick={{ fill: "#333333" }}
                 axisLine={{ stroke: "#CCCCCC" }}
                 tickLine={{ stroke: "#CCCCCC" }}
                 label={{
-                  value: "Year",
+                  value: t("axis.year"),
                   position: "bottom",
                   fill: "#333333",
                 }}
               />
 
-              {/* Y-axis: ranks 0–10 */}
+              {/* Y-axis */}
               <YAxis
                 type="number"
                 domain={[0, 10]}
@@ -151,18 +160,18 @@ export function Chart() {
                 axisLine={{ stroke: "#CCCCCC" }}
                 tickLine={{ stroke: "#CCCCCC" }}
                 label={{
-                  value: "Rank",
+                  value: t("axis.rank"),
                   angle: -90,
                   position: "insideLeft",
                   fill: "#333333",
                 }}
               />
 
-              {/* Education curve */}
+              {/* Education line */}
               <Line
                 type="monotone"
                 dataKey="education"
-                name="Education"
+                name={t("legend.education")}
                 stroke="#888888"
                 strokeWidth={2}
                 dot={{ r: 4, fill: "#FFFFFF", stroke: "#888888" }}
@@ -170,11 +179,11 @@ export function Chart() {
                 connectNulls
               />
 
-              {/* Career curve */}
+              {/* Career line */}
               <Line
                 type="monotone"
                 dataKey="career"
-                name="Career"
+                name={t("legend.career")}
                 stroke="#000000"
                 strokeWidth={2}
                 dot={{ r: 4, fill: "#FFFFFF", stroke: "#000000" }}
@@ -182,12 +191,13 @@ export function Chart() {
                 connectNulls
               />
 
-              {/* Custom tooltip */}
+              {/* Tooltip */}
               <Tooltip
                 cursor={{ stroke: "#999999", strokeWidth: 1 }}
                 content={<CustomTooltip />}
               />
 
+              {/* Legend */}
               <Legend verticalAlign="top" wrapperStyle={{ color: "#333333" }} />
             </LineChart>
           </ChartContainer>
@@ -198,26 +208,34 @@ export function Chart() {
 }
 
 function CustomTooltip({ active, payload }: any) {
-  if (!active || !payload?.length) return null;
+  const { t } = useTranslation();
 
+  if (!active || !payload?.length) return null;
   const { eduPeriod, eduTitle, education, jobPeriod, jobTitle, career, year } =
     payload[0].payload;
 
   return (
     <div className="bg-white border border-gray-300 rounded-lg p-3 text-black">
-      {education != null && education > 0 && (
+      {/* Education hover */}
+      {education > 0 && (
         <>
-          <div className="font-semibold">{eduPeriod}</div>
-          <div className="text-sm mb-2">{eduTitle}</div>
+          <div className="font-semibold">
+            {t(`eduPeriods.${eduPeriod}`)} — {t(`eduTitles.${eduTitle}`)}
+          </div>
         </>
       )}
-      {career != null && career > 0 && (
+
+      {/* Career hover */}
+      {career > 0 && (
         <>
-          <div className="font-semibold">{jobPeriod}</div>
-          <div className="text-sm mb-2">{jobTitle}</div>
+          <div className="font-semibold">
+            {t(`jobPeriods.${jobPeriod}`)} — {t(`jobTitles.${jobTitle}`)}
+          </div>
         </>
       )}
-      <div className="text-xs text-gray-500">Year: {year}</div>
+
+      {/* Year label */}
+      <div className="text-xs text-gray-500">{t("tooltip.year", { year })}</div>
     </div>
   );
 }
