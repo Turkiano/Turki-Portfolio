@@ -41,7 +41,7 @@ export function ContactMe() {
 
     }
   return (
-    <Card className="w-[350px]">
+    <Card className="w-full max-w-[350px] mx-auto">
       <CardHeader>
         <CardTitle>Contact Me</CardTitle>
         <CardDescription>Fill up the following form</CardDescription>
