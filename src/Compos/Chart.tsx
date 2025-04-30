@@ -164,6 +164,7 @@ export function Chart() {
                   angle: -90,
                   position: "insideLeft",
                   fill: "#333333",
+                  dx: -5, // ← slide the label 5px closer to the axis
                 }}
               />
 

@@ -20,6 +20,12 @@
     "secondaryAction": "Contact me"
   },
 
+  "about": {
+    "Name": "Turki Saeed",
+    "CareerTitle": "Full-Stack Marketing Technologist",
+    "description": "I'm a marketing professional with a strong foundation in multimedia and advertising, driven by the passion of bringing creative ideas to life. Since 2012, I've worked collaboratively in teams to build memorable campaigns for brands like AXA Insurance, GatherIn App, and King Khalid Airport. My experience spans content creation, branding, video editing, and visual effects, all aimed at connecting genuinely with audiences. I'm always eager to learn and inspired by teamwork that transforms simple ideas into impactful results."
+  },
+
   "chart": {
     "title": "Timeline {{start}} – {{end}}",
     "subtitle": "Education vs. Career performance over actual years."

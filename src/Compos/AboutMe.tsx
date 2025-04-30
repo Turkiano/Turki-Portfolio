@@ -1,13 +1,26 @@
 // AboutMeSection.jsx
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Chart } from "./Chart";
+import { useTranslation } from "react-i18next";
 
 export default function AboutMe() {
+  const { t, i18n } = useTranslation();
+  const isRtl = i18n.language === "ar";
   return (
     <div className="bg-gray-200 min-h-screen flex items-start justify-center p-4 md:p-8">
-      <div className="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {/* ─── LEFT COLUMN: PROFILE ─────────────────────────────────── */}
-        <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-6">
+      {" "}
+      <div
+        className="
+         w-auto             /* only as wide as its columns */
+         grid grid-cols-1
+         lg:[grid-template-columns:auto_2fr_3fr] /* pic auto, text 2fr, chart 3fr */
+         gap-8
+         items-start
+       "
+      >
+        {" "}
+        {/* ─── COLUMN 1: PROFILE IMAGE ─── */}
+        <div className="flex justify-center lg:justify-start">
           <div className="bg-gray-400 rounded-2xl p-1.5">
             <div className="w-40 sm:w-56 md:w-64 lg:w-72 aspect-square rounded-xl overflow-hidden">
               <img
@@ -17,11 +30,14 @@ export default function AboutMe() {
               />
             </div>
           </div>
-
+        </div>
+        {/* ─── COLUMN 2: TEXT CONTENT ─── */}
+        <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-6 w-full max-w-lg">
+          {/* ADDED: max-h and overflow to control vertical height on large screens */}
           <div className="space-y-2 px-4">
             <div className="flex items-center justify-center lg:justify-start gap-3">
               <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">
-                Turki Saeed
+                {t("about.Name")}
               </h1>
               <a
                 href="https://github.com/turkiano"
@@ -40,24 +56,29 @@ export default function AboutMe() {
                 <FaLinkedin />
               </a>
             </div>
+            <div>
+            <h5
+               className={`
+                 text-lg sm:text-xl md:text-2xl font-medium
+                 ${isRtl ? "text-right" : "text-left"}
+               `}
+             >                {t("about.CareerTitle")}
+              </h5>
+            </div>
 
-            <h5 className="text-lg sm:text-xl md:text-2xl font-medium">
-              Full-Stack Marketing Technologist
-            </h5>
-
-            <p className="text-sm sm:text-base md:text-lg text-gray-800 max-w-md mx-auto lg:mx-0">
-              I’m a Full-Stack Marketing Technologist with a passion for turning
-              ideas into impact. Over the past decade, I’ve bridged the gap
-              between creative storytelling and cutting-edge code—designing and
-              deploying end-to-end digital experiences that captivate audiences
-              and drive measurable growth. From architecting responsive web apps
-              to integrating real-time analytics and marketing automation, I
-              thrive on crafting seamless journeys that connect brands to their
-              customers. Always learning, always iterating, I bring both
-              strategic vision and hands-on technical expertise to every
-              project, ensuring that your next campaign isn’t just seen—it’s
-              felt, shared, and remembered.
-            </p>
+            <div
+              className={`
+    flex flex-col gap-6
+    ${isRtl ? "items-end text-right" : "items-start text-left"}
+    w-full max-w-lg
+  `}
+              dir={isRtl ? "rtl" : "ltr"}
+            >
+              {" "}
+              <p className="text-sm sm:text-base md:text-lg text-gray-800 max-w-md mx-auto lg:mx-0">
+                {t("about.description")}
+              </p>
+            </div>
 
             <div className="flex justify-center lg:justify-start pt-4">
               <a
@@ -70,9 +91,10 @@ export default function AboutMe() {
             </div>
           </div>
         </div>
-
-        {/* ─── RIGHT COLUMN: CHART ─────────────────────────────────── */}
-        <div className="w-full h-[300px] md:h-[400px]">
+        {/* ─── COLUMN 3: CHART ─── */}
+        <div className="w-full  md:h-[400px] self-center">
+          {" "}
+          {/* ADDED self-center to balance vertical alignment */}
           <Chart />
         </div>
       </div>

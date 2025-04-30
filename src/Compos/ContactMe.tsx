@@ -1,5 +1,6 @@
 import * as React from "react";
 
+import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -20,6 +21,25 @@ import {
 } from "@/components/ui/select";
 
 export function ContactMe() {
+
+  const [form, setForm] = React.useState({
+    name: "", 
+    phone: "",
+    email: "",
+    request: "",
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setForm({
+      ...form, 
+      [e.target.id]: e.target.value
+    });
+
+    const handleReuestChange = (value:string) => {
+      e.preventDefault();
+    }
+
+    }
   return (
     <Card className="w-[350px]">
       <CardHeader>
@@ -63,6 +83,13 @@ export function ContactMe() {
                   <SelectItem value="other">Other</SelectItem>
                 </SelectContent>
               </Select>
+            </div>
+            <div className="flex flex-col space-y-1.5 ">
+              <Label htmlFor="message">Message</Label>
+              <Textarea
+                id="message"
+                placeholder="Describe your request"
+              />
             </div>
           </div>
         </form>
