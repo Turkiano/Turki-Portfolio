@@ -2,6 +2,7 @@ import { Progress } from "@/components/ui/progress";
 import { useTranslation } from "react-i18next";
 import BrandOne from "./BrandOne";
 import BrandTwo from "./BrandTwo";
+import BrandThree from "./BrandingThree";
 
 export function BrandingProjects() {
   const { t, i18n } = useTranslation();
@@ -44,6 +45,7 @@ export function BrandingProjects() {
 
       <BrandOne/>
       <BrandTwo/>
+      <BrandThree/>
     </>
   );
 }
