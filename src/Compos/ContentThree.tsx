@@ -1,0 +1,83 @@
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { useState } from "react";
+
+export default function ContentThree() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const imageUrl = "https://i.postimg.cc/jS3vYCgK/Fine-Mark-grid.png";
+
+  return (
+    <Card>
+      <CardContent>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-3 ">
+          {/* Column 1: Main Logo + Brand Colors */}
+          <div className="flex justify-center items-center space-x-3">
+            <img
+              src="https://i.postimg.cc/DwrYV2Vw/Main-fine-Mark-logo.png"
+              alt="FineMark Logo"
+              className="w-50 h-auto"
+            />
+            <div className="grid grid-cols-2 gap-4">
+              <p>Content Date: December 2022</p>
+            </div>
+          </div>
+
+          {/* Column 2: Text + Download Button */}
+          <div className="flex flex-col justify-between">
+            <h2 className="text-3xl font-bold">SM Conent: FNC </h2>
+            <p className="text-sm text-gray-700 mb-4">
+              I’ve had the pleasure of collaborating with Pioneers to elevate
+              their brand even further, spearheading a full identity re-brand
+              and crafting a stronger online presence across their website and
+              social media channels. Together, we’re refining every visual
+              element and messaging touchpoint to reflect their spirit of
+              innovation. This exciting marketing initiative is still underway,
+              and I’m honored to help Pioneers shine as the go-to technology
+              partner for ambitious visionaries.
+            </p>
+            <div className="flex justify-center">
+              <Button className="lg:w-1/3 md:w-1/2">Download Project</Button>
+            </div>{" "}
+          </div>
+
+          {/* Column 3: Additional Logos */}
+          {/* Column 3: Additional Logos in a row */}
+          <div className="flex justify-center items-center space-x-3">
+            {/* Thumbnail */}
+            <img
+              src={imageUrl}
+              alt="iboat grid"
+              className="rounded-md w-50 h-auto cursor-pointer hover:opacity-80 transition"
+              onClick={() => setIsOpen(true)}
+            />
+
+            {/* Modal Overlay */}
+            {isOpen && (
+              <div
+                className="fixed inset-0 bg-black bg-opacity-10 flex items-center justify-center z-50"
+                onClick={() => setIsOpen(false)}
+              >
+                <img
+                  src={imageUrl}
+                  alt="Full screen iboat grid"
+                  className="max-w-full max-h-full object-contain"
+                  onClick={(e) => e.stopPropagation()} // prevent closing when clicking the image
+                />
+              </div>
+            )}
+
+            <video
+              src="https://media-hosting.imagekit.io/3f86d519d1674ba0/WhatsApp%20Video%202025-05-04%20at%206.27.40%20PM.mp4?Expires=1840980704&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=q39DkrQ884a6BF0ojRa7EiSp8M-dYCI6311V8pPn3n4lpIjPYI5YDh79fcBW9dvA-h6DKc6KPSWVuGI165rDqeEm-tCi~~wV61b3RFbaq5GEPwQ~7P-5BphAhU-~WmuphktOs4DUkd4t~Rb8mp1gTYA62CNkhO99MHo0PRyHJiOAFS3aWaeXSpRGOCSrxI-o4Bcv--3xBAtNHM9Ij5gMpCBDVobDhvga8seAliuAAHzzzRMEd5QF~s~ihflqxlAKMmR7MZfcbIirF5~FJ5K6fpAOc-nM6lj~XDOOzYJ7fVuuGeztcW0FqUroExw5hjNN1FPw7sr8aHqCzMnRqwq1lQ__"
+              controls
+              autoPlay
+              loop
+              muted
+              className="w-50 max-w-md rounded-lg shadow"
+            />
+          </div>
+        </div>
+      </CardContent>
+    </Card>
+  );
+}

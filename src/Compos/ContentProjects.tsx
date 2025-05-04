@@ -1,5 +1,8 @@
 import { Progress } from "@/components/ui/progress";
 import { useTranslation } from "react-i18next";
+import ContentOne from "./ContentOne";
+import ContentTwo from "./ContentTwo";
+import ContentThree from "./ContentThree";
 
 export function ContentProjects() {
      const { t, i18n } = useTranslation();
@@ -42,6 +45,10 @@ export function ContentProjects() {
           </div>
         </div>
       </div>
+
+      <ContentOne/>
+      <ContentTwo/>
+      <ContentThree/>
     </>
   );
 }
