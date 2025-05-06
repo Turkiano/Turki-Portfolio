@@ -1,5 +1,4 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
 export default function ContentThree() {
@@ -8,7 +7,7 @@ export default function ContentThree() {
   const imageUrl = "https://i.postimg.cc/jS3vYCgK/Fine-Mark-grid.png";
 
   return (
-    <Card>
+    <Card className="mt-3">
       <CardContent>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-3 ">
           {/* Column 1: Main Logo + Brand Colors */}
@@ -19,14 +18,14 @@ export default function ContentThree() {
               className="w-50 h-auto"
             />
             <div className="grid grid-cols-2 gap-4">
-              <p>Content Date: December 2022</p>
+              <p>Market Industry: Manufacturacion</p>
             </div>
           </div>
 
           {/* Column 2: Text + Download Button */}
-          <div className="flex flex-col justify-between">
-            <h2 className="text-3xl font-bold">SM Conent: FNC </h2>
-            <p className="text-sm text-gray-700 mb-4">
+          <div className="flex flex-col space-y-2">
+            <h2 className="text-3xl font-bold mt-10">SM Conent: FNC </h2>
+            <p className="text-sm text-gray-700 mb-4 mt-5">
               I’ve had the pleasure of collaborating with Pioneers to elevate
               their brand even further, spearheading a full identity re-brand
               and crafting a stronger online presence across their website and
@@ -36,9 +35,6 @@ export default function ContentThree() {
               and I’m honored to help Pioneers shine as the go-to technology
               partner for ambitious visionaries.
             </p>
-            <div className="flex justify-center">
-              <Button className="lg:w-1/3 md:w-1/2">Download Project</Button>
-            </div>{" "}
           </div>
 
           {/* Column 3: Additional Logos */}

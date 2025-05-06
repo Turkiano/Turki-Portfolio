@@ -1,5 +1,11 @@
 import { Progress } from "@/components/ui/progress";
 import { useTranslation } from "react-i18next";
+import VfxOne from "./VfxOne";
+import VfxTwo from "./VfxTwo";
+import VfxThree from "./VfxFThree";
+import VfxFour from "./VfxFour";
+import VfxFive from "./VfxFive";
+import VfxSix from "./VfxSix";
 
 export function VfxProjects() {
   const { t, i18n } = useTranslation();
@@ -37,6 +43,14 @@ export function VfxProjects() {
           </div>
         </div>
       </div>
+      <VfxSix />
+      <VfxFive />
+      <VfxFour />
+
+      <VfxThree />
+
+      <VfxTwo />
+      <VfxOne />
     </>
   );
 }

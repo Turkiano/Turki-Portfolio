@@ -13,7 +13,7 @@ export default function BrandThree() {
           <div className="flex justify-center items-center space-x-3">
             <img
               src="https://i.postimg.cc/MT3kF3CT/ML-LOGO.png"
-              alt="Pioneers Logo"
+              alt="Medcial Lights Logo"
               className="mb-4 w-50 h-auto"
             />
             <div className="grid grid-cols-2 gap-4">
@@ -53,17 +53,17 @@ export default function BrandThree() {
           <div className="flex justify-center items-center space-x-3">
             <img
               src="https://i.postimg.cc/LXpLxjfJ/Hip-Abduction-pillow.png"
-              alt="Pioneers Logo 02"
+              alt="Medcial Lights design 02"
               className="rounded-md w-35 h-auto"
             />
             <img
               src="https://i.postimg.cc/fTpZ4Cbg/Casting-Tape.png"
-              alt="Pioneers Logo 03"
+              alt="Medcial Lights design 03" 
               className="rounded-md w-35 h-auto"
             />
             <img
               src="https://i.postimg.cc/bw0zQbzC/Cardboard-Brochure.png"
-              alt="Pioneers Logo 04"
+              alt="Medcial Lights design 04"
               className="rounded-md w-35 h-auto"
             />
           </div>
