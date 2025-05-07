@@ -1,5 +1,8 @@
 import { Progress } from "@/components/ui/progress";
 import { useTranslation } from "react-i18next";
+import ProgramOne from "./ProgramOne";
+import ProgramTwo from "./ProgramTwo";
+import ProgramThree from "./ProgramThree";
 
 export function ProgrammingProjects() {
   const { t, i18n } = useTranslation();
@@ -7,7 +10,9 @@ export function ProgrammingProjects() {
 
   return (
     <>
-      <h1 className="text-3xl font-bold pt-10">{t("ProgramingProjects.title")}</h1>
+      <h1 className="text-3xl font-bold pt-10">
+        {t("ProgramingProjects.title")}
+      </h1>
       <div
         dir={isRtl ? "rtl" : "ltr"}
         className="w-full max-w-4xl px-4 sm:px-6 md:px-10 mx-auto"
@@ -40,6 +45,12 @@ export function ProgrammingProjects() {
             ))}
           </div>
         </div>
+      </div>
+
+      <div>
+        <ProgramOne />
+        <ProgramTwo />
+        <ProgramThree />
       </div>
     </>
   );
