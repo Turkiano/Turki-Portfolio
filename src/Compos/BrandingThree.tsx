@@ -1,9 +1,11 @@
 import * as React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
 
 export default function BrandThree() {
   const colors = ["09478f", "65c4ea", "3f3c39"];
+  const { t } = useTranslation();
 
   return (
     <Card>
@@ -31,20 +33,14 @@ export default function BrandThree() {
 
           {/* Column 2: Text + Download Button */}
           <div className="flex flex-col justify-between">
-            <h2 className="text-3xl font-bold">Branding: Medcial Lights</h2>
+            <h2 className="text-3xl font-bold">{t("BrandThree.title")}</h2>
             <p className="text-sm text-gray-700 mb-4">
-              Following up as a Project Manager, where I took on broader
-              responsibilities regularly meeting with the client multiple times
-              a week, collaborating with the internal team, and sometime I will
-              have to do the designing myself to ensure deadlines were met and
-              our work aligned with the agency’s standards. . At Tajreed
-              Marketing Agency, I had the rewarding experience of working with a
-              variety of clients, which enhanced my design expertise, also
-              deepened my leadership, and project management skills in a
-              fast-paced environment in the Marketing industry.
+              {t("BrandThree.paragraph")}
             </p>
             <div className="flex justify-center">
-              <Button className="lg:w-1/3 md:w-1/2">Download Project</Button>
+              <Button className="lg:w-1/3 md:w-1/2">
+                {t("BrandThree.button")}
+              </Button>
             </div>{" "}
           </div>
 
@@ -58,7 +54,7 @@ export default function BrandThree() {
             />
             <img
               src="https://i.postimg.cc/fTpZ4Cbg/Casting-Tape.png"
-              alt="Medcial Lights design 03" 
+              alt="Medcial Lights design 03"
               className="rounded-md w-35 h-auto"
             />
             <img

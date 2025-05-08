@@ -1,9 +1,10 @@
-import * as React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
 
 export default function BrandOne() {
   const colors = ["ff5410", "56f82d", "57caab", "aa2efc"];
+  const { t } = useTranslation();
 
   return (
     <Card>
@@ -31,19 +32,14 @@ export default function BrandOne() {
 
           {/* Column 2: Text + Download Button */}
           <div className="flex flex-col justify-between">
-            <h2 className="text-3xl font-bold">Branding: Pioneers</h2>
+            <h2 className="text-3xl font-bold"> {t("BrandOne.title")}</h2>
             <p className="text-sm text-gray-700 mb-4">
-              I’ve had the pleasure of collaborating with Pioneers to elevate
-              their brand even further, spearheading a full identity re-brand and
-              crafting a stronger online presence across their website and
-              social media channels. Together, we’re refining every visual
-              element and messaging touchpoint to reflect their spirit of
-              innovation. This exciting marketing initiative is still underway,
-              and I’m honored to help Pioneers shine as the go-to technology
-              partner for ambitious visionaries.
+              {t("BrandOne.paragraph")}
             </p>
             <div className="flex justify-center">
-              <Button className="lg:w-1/3 md:w-1/2">Download Project</Button>
+              <Button className="lg:w-1/3 md:w-1/2">
+                {t("BrandOne.button")}
+              </Button>
             </div>{" "}
           </div>
 

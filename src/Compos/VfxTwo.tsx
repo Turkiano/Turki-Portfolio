@@ -7,16 +7,24 @@ export default function VfxTwo() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-3">
           {/* Column 1: Text */}
           <div className="flex flex-col space-y-2">
-            <h2 className="text-3xl font-bold mt-10">SM Content: FNC</h2>
+            <h2 className="text-3xl font-bold mt-10">
+              Sea World Project - Andalus Mall
+            </h2>
             <p className="text-sm text-gray-700 mb-4 mt-5">
-              I’ve had the pleasure of collaborating with Pioneers to elevate
-              their brand even further, spearheading a full identity re-brand
-              and crafting a stronger online presence across their website and
-              social media channels. Together, we’re refining every visual
-              element and messaging touchpoint to reflect their spirit of
-              innovation. This exciting marketing initiative is still underway,
-              and I’m honored to help Pioneers shine as the go-to technology
-              partner for ambitious visionaries.
+              During my time as a Social Media Manager at FineMark Expo from
+              February to November 2020, I had the privilege of leading digital
+              storytelling for one of our most vibrant campaigns—the Sea World
+              Project at Al-Andalus Mall in Jeddah. Though the project itself
+              spanned just 3 to 5 working days, it was the culmination of weeks
+              of creative planning, production coordination, and hands-on
+              execution. From the initial brainstorming sessions in the FineMark
+              workshop to the final implementation on-site, I meticulously
+              documented every stage to create engaging, behind-the-scenes
+              content. The goal of the campaign was to build brand awareness and
+              introduce the public to the exciting presence of FineMark Expo.
+              This project deepened my passion for turning ideas into immersive,
+              shareable experiences and strengthened my ability to manage
+              fast-paced campaigns with precision and creativity.
             </p>
           </div>
 

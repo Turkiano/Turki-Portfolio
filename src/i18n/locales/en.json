@@ -112,6 +112,25 @@
     "progress07": "Emotional Intelligence"
 
   },
+  "BrandOne":{
+    "title": "Branding: Pioneers",
+    "paragraph": "I’ve had the pleasure of collaborating with Pioneers to elevate their brand even further—spearheading a full identity rebrand and crafting a stronger online presence across their website and social media channels. Together, we’re refining every visual element and messaging touchpoint to reflect their spirit of innovation. This exciting marketing initiative is still underway, and I’m honored to help Pioneers shine as the go-to technology partner for ambitious visionaries.",
+    "button": "Download Project"
+
+  },
+  "BrandTwo":{
+    "title": "Branding: FNC",
+    "paragraph": "During my time at Tajreed Marketing Agency, I had the incredible opportunity to work with a diverse range of clients, including the Al Fraidy National Center (FNC). As a graphic designer, I led the enhancement of FNC’s brand guidelines, redesigned their website for a more impactful user experience, and elevated their social media presence with consistent, engaging content. My dedication and creative leadership led to a promotion to Project Manager, where I took on greater responsibilities—meeting with the client two to three times a week and coordinating closely with our internal team to meet tight deadlines while upholding Tajreed’s high standards. This journey not only sharpened my design skills but also strengthened my ability to lead, communicate, and deliver exceptional results under pressure.",
+    "button": "Download Project"
+
+  },
+
+  "BrandThree":{
+    "title": "Branding: Medcial Lights",
+    "paragraph": "As a Project Manager at Tajreed Marketing Agency, I took on broader responsibilities—regularly meeting with clients multiple times a week, collaborating closely with the internal team, and occasionally stepping in to handle design tasks myself to ensure deadlines were met and the work upheld the agency’s high standards. Working with a wide range of clients gave me invaluable experience that enhanced my design expertise while also deepening my leadership and project management skills in the fast-paced world of marketing.",
+    "button": "Download Project"
+
+  },
 
 "ContentProjects": {
   "title": "Content Creator",
@@ -125,6 +144,10 @@
   "progress06": "Understanding Algorithms",
   "progress07": "Search Engine Optimization (SEO)"
 },
+"ContentOne":{
+    "title": "Branding: Pioneers",
+    "paragraph": "I’ve had the pleasure of collaborating with Pioneers to elevate their brand even further—spearheading a full identity rebrand and crafting a stronger online presence across their website and social media channels. Together, we’re refining every visual element and messaging touchpoint to reflect their spirit of innovation. This exciting marketing initiative is still underway, and I’m honored to help Pioneers shine as the go-to technology partner for ambitious visionaries."
+  },
 
 "ProgramingProjects": {
   "title": "Full Stack Software Developer",

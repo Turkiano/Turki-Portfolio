@@ -7,16 +7,35 @@ export default function VfxThree() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-3">
           {/* Column 1: Text */}
           <div className="flex flex-col space-y-2">
-            <h2 className="text-3xl font-bold mt-10">SM Content: FNC</h2>
+            <h2 className="text-3xl font-bold mt-10">
+              Brand Presentation for Eddy KSA
+            </h2>
             <p className="text-sm text-gray-700 mb-4 mt-5">
-              I’ve had the pleasure of collaborating with Pioneers to elevate
-              their brand even further, spearheading a full identity re-brand
-              and crafting a stronger online presence across their website and
-              social media channels. Together, we’re refining every visual
-              element and messaging touchpoint to reflect their spirit of
-              innovation. This exciting marketing initiative is still underway,
-              and I’m honored to help Pioneers shine as the go-to technology
-              partner for ambitious visionaries.
+              Working as an advertising designer at VMLY&R Agency was an
+              enlightening journey filled with creativity, collaboration, and
+              valuable learning experiences. One of the standout projects was
+              creating a compelling presentation video for Eddy, a prominent
+              player in the home and electronics industry. Although the project
+              spanned just one intense, collaborative day with the talented team
+              at Y&R's bustling office in Jeddah, the experience was
+              exceptionally rich and impactful. From my vantage point as a video
+              editor, I discovered the art of effectively sourcing and
+              incorporating Shutterstock footage to vividly illustrate and
+              communicate our creative vision to the client. This process taught
+              me the importance of visual storytelling, precision, and quick
+              problem-solving, especially when working under tight deadlines.
+              Even though our initial creative direction faced unforeseen
+              challenges and did not pan out exactly as planned, the obstacles
+              encountered became opportunities to refine our strategy, push our
+              creativity further, and explore alternative solutions. The
+              collaboration significantly enhanced my practical expertise in
+              critical design and production skills, such as Adobe InDesign,
+              Photoshop, Illustrator, Branding & Identity, and Video Production.
+              Moreover, I developed a deeper understanding of adhering to brand
+              guidelines and maintaining visual consistency. Above all, this
+              memorable project strengthened my adaptability, teamwork, and
+              resilience, qualities that have proved invaluable in my
+              professional growth and continue to inspire me today.
             </p>
           </div>
 

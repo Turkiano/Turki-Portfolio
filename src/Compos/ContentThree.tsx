@@ -18,22 +18,33 @@ export default function ContentThree() {
               className="w-50 h-auto"
             />
             <div className="grid grid-cols-2 gap-4">
-              <p>Market Industry: Manufacturacion</p>
+              <p>Market Industry: Construction</p>
             </div>
           </div>
 
           {/* Column 2: Text + Download Button */}
           <div className="flex flex-col space-y-2">
-            <h2 className="text-3xl font-bold mt-10">SM Conent: FNC </h2>
+            <h2 className="text-3xl font-bold mt-10">
+              SM Conent: FineMark Expo{" "}
+            </h2>
             <p className="text-sm text-gray-700 mb-4 mt-5">
-              I’ve had the pleasure of collaborating with Pioneers to elevate
-              their brand even further, spearheading a full identity re-brand
-              and crafting a stronger online presence across their website and
-              social media channels. Together, we’re refining every visual
-              element and messaging touchpoint to reflect their spirit of
-              innovation. This exciting marketing initiative is still underway,
-              and I’m honored to help Pioneers shine as the go-to technology
-              partner for ambitious visionaries.
+              In February 2020, I embarked on an exciting journey as a Social
+              Media Manager at FineMark Expo, a pioneering production company
+              based in the Kingdom of Saudi Arabia. Specializing in temporary
+              and semi-permanent event productions as well as permanent
+              construction projects, FineMark Expo provided me with a vibrant
+              canvas to unleash my creativity and strategic thinking. Tasked
+              with launching and managing their social media platforms and
+              overseeing website content, I embraced the challenge of capturing
+              and sharing compelling visuals by filming numerous workshops and
+              production events. When the unforeseen disruption of Covid-19
+              halted projects globally, I pivoted creatively, determined to
+              sustain our digital presence. Through relentless effort, I
+              produced valuable digital assets that continue to resonate and
+              enhance the company’s brand image even today. This experience not
+              only honed my resilience and adaptability but also laid a strong
+              foundation for my passion for storytelling and impactful digital
+              communication.
             </p>
           </div>
 

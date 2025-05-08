@@ -1,8 +1,10 @@
-import * as React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
 
 export default function BrandOne() {
+  const { t } = useTranslation();
+
   const mainColors = ["2CAAE1", "44B8B6"];
   const secondaryColors = ["37C3F4", "57DDD6", "00FFB5"];
   const gradients = [
@@ -85,24 +87,14 @@ export default function BrandOne() {
 
           {/* Column 2: Text + Button */}
           <div className="flex flex-col justify-between">
-            <h2 className="text-3xl font-bold">Branding: FNC</h2>
+            <h2 className="text-3xl font-bold"> {t("BrandTwo.title")}</h2>
             <p className="text-sm text-gray-700 mb-4">
-              During my time at Tajreed Marketing Agency, I had the incredible
-              opportunity to work with a diverse range of clients, including the
-              Al Fraidy National Center (FNC). As a graphic designer, I led the
-              enhancement of FNC’s brand guidelines, redesigned their website
-              for a more impactful user experience, and elevated their social
-              media presence with consistent, engaging content. My dedication
-              and creative leadership led to a promotion to Project Manager,
-              where I took on greater responsibilities such as meeting with the
-              client two to three times a week, and coordinating closely with
-              our internal team to meet tight deadlines; while upholding
-              Tajreed’s high standards. This journey not only sharpened my
-              design skills but also strengthened my ability to lead,
-              communicate, and deliver exceptional results under pressure.
+              {t("BrandTwo.paragraph")}
             </p>
             <div className="flex justify-center">
-              <Button className="lg:w-1/3 md:w-1/2">Download Project</Button>
+              <Button className="lg:w-1/3 md:w-1/2">
+                {t("BrandTwo.button")}
+              </Button>
             </div>
           </div>
 
