@@ -1,7 +1,11 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
+
 
 export default function ContentTwo() {
+    const { t } = useTranslation();
+  
   const [isOpen, setIsOpen] = useState(false);
 
   const imageUrl = "https://i.postimg.cc/vBtN2Zt5/iboat-grid.png";
@@ -18,26 +22,15 @@ export default function ContentTwo() {
               className="w-50 h-auto"
             />
             <div className="grid grid-cols-2 gap-4">
-              <p>Market Industry: Tourism & Entertainment</p>
+              <p>{t("ContentTwo.industry")}</p>
             </div>
           </div>
 
           {/* Column 2: Text + Download Button */}
           <div className="flex flex-col space-y-2">
-            <h2 className="text-3xl font-bold mt-10">SM Conent: iBoat App </h2>
+            <h2 className="text-3xl font-bold mt-10">{t("ContentTwo.title")}</h2>
             <p className="text-sm text-gray-700 mb-4 mt-5">
-              In addition, managing projects for iBoat has been a rewarding
-              experience that demanded teamwork and coordination. Together with
-              my colleagues at Tajreed Agency, we successfully handled diverse
-              tasks including social media content management, website
-              management, and detailed video editing. Our collaborative effort
-              significantly contributed to iBoat's remarkable achievement of
-              securing first place in Monshaat’s startup competition, an
-              accomplishment recognized and supported by the General
-              Entertainment and Tourism Authority due to its alignment with
-              Saudi Arabia’s Vision 2030. Leading and working alongside such a
-              dedicated team has been a highlight of my career, showcasing the
-              power of collective effort and innovation.
+              {t("ContentTwo.paragraph")}
             </p>
           </div>
 

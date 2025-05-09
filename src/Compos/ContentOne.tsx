@@ -1,7 +1,10 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function ContentOne() {
+  const { t } = useTranslation();
+
   const [isOpen, setIsOpen] = useState(false);
 
   const imageUrl = "https://i.postimg.cc/kXXF7Z1q/gird-Main.png";
@@ -17,31 +20,17 @@ export default function ContentOne() {
               className="w-50 h-auto"
             />
             <div className="grid grid-cols-2 gap-4">
-              <p>Market Industry: Health Care</p>
+              <p>{t("ContentOne.industry")}</p>
             </div>
           </div>
 
           {/* Column 2: Text + Download Button */}
           <div className="flex flex-col space-y-2">
-            <h2 className="text-3xl font-bold mt-10">SM Conent: Al-Faraidy
-              Medical Center </h2>
+            <h2 className="text-3xl font-bold mt-10">
+              {t("ContentOne.title")}
+            </h2>
             <p className="text-sm text-gray-700 mb-4 mt-5">
-              As a project manager overseeing social media for Al-Faraidy
-              Medical Center (FNC), I've embraced a dynamic role that demands
-              versatility, creativity, and precision. Wearing multiple hats,
-              I've strategically developed compelling content aligned with FNC’s
-              vision, proactively planning a month ahead to ensure seamless
-              delivery. Each content piece goes through a meticulous
-              process—beginning with conceptualization and declaration, securing
-              approval via the Monday platform, and then moving into vibrant
-              design and engaging animation stages. Another round of approval
-              ensures alignment with client expectations before final scheduling
-              for publication. Beyond these operational responsibilities, I've
-              prioritized building and nurturing strong client relationships
-              through regular meetings three to four times weekly. These
-              interactions have not only sustained momentum but also deepened
-              trust and collaboration, laying the groundwork for ongoing
-              success.
+              {t("ContentOne.paragraph")}
             </p>
           </div>
 

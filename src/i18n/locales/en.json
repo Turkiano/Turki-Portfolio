@@ -99,6 +99,32 @@
     "progress06": "Zbrush",
     "progress07": "Audio Editing"
   },
+  
+  "VfxOne": {
+    "title": "ShowReel 2000",
+    "paragraph": "My career in visual storytelling began as a VFX artist during a three-month internship at PixelPost Agency in Malaysia, a renowned MSC-status company in the advertising industry. There, I honed my skills in digital imaging, 2D and 3D animation, and video editing, laying the creative foundation for what was to come. Returning to my hometown, Jeddah, I stepped into my first full-time role with Milimeter Production as an Assistant Manager. This role opened doors to high-profile projects, including visually captivating work for Red Bull and other notable productions, sharpening both my technical and managerial abilities. Simultaneously, I embraced freelancing, notably collaborating with Queen Lounge on an exclusive event featuring Alaa Almonsory from Alf Alf FM. From conceptualization to shooting and editing, I led the production process, delivering a final piece that exceeded expectations and left the client highly satisfied. This journey reflects my passion for visual media, adaptability across roles, and dedication to delivering excellence at every stage."
+  },
+  "VfxTwo": {
+    "title": "Sea World Project - Andalus Mall",
+    "paragraph": "During my time as a Social Media Manager at FineMark Expo from February to November 2020, I had the privilege of leading digital storytelling for one of our most vibrant campaigns—the Sea World Project at Al-Andalus Mall in Jeddah. Though the project itself spanned just 3 to 5 working days, it was the culmination of weeks of creative planning, production coordination, and hands-on execution. From the initial brainstorming sessions in the FineMark workshop to the final implementation on-site, I meticulously documented every stage to create engaging, behind-the-scenes content. The goal of the campaign was to build brand awareness and introduce the public to the exciting presence of FineMark Expo. This project deepened my passion for turning ideas into immersive, shareable experiences and strengthened my ability to manage fast-paced campaigns with precision and creativity."
+  },
+  "VfxThree": {
+    "title": "Documentary Film | Dar Al Sayed Abdullah Sharbatly",
+    "paragraph": "Working as an advertising coordinator with Albir Society from March 2017 to January 2019 was truly an inspiring journey, enriched by meaningful projects that touched hearts and impacted lives. One particularly memorable event was when we had the honor of welcoming Prince Mishal bin Abdulaziz to visit the Mr. Abdullah Al-Sharbatly orphanage home in Jeddah. Entrusted with the responsibility of producing a documentary film highlighting the state-of-the-art facilities of the orphanage, my task was to vividly capture the benefits and daily joys experienced by the orphans under Albir’s compassionate management. Over an intensive two-week period, I immersed myself deeply into various creative roles, working as a camera operator, video editor, VFX artist, and audio editor, to ensure every aspect of the story was presented authentically and compellingly. Supported by an extraordinary team whose dedication matched my own, we collectively brought to life a heartfelt narrative that resonated profoundly with all who viewed it, including the esteemed royal visitor. This documentary not only underscored the nurturing environment Albir Society provided for orphaned children but also affirmed to me personally how powerful visual storytelling can inspire community awareness, empathy, and positive social change."
+  },
+  "VfxFour": {
+    "title": "Brand Presentation for Eddy KSA",
+    "paragraph": "Working as an advertising designer at VMLY&R Agency was an enlightening journey filled with creativity, collaboration, and valuable learning experiences. One of the standout projects was creating a compelling presentation video for Eddy, a prominent player in the home and electronics industry. Although the project spanned just one intense, collaborative day with the talented team at Y&R's bustling office in Jeddah, the experience was exceptionally rich and impactful. From my vantage point as a video editor, I discovered the art of effectively sourcing and incorporating Shutterstock footage to vividly illustrate and communicate our creative vision to the client. This process taught me the importance of visual storytelling, precision, and quick problem-solving, especially when working under tight deadlines. Even though our initial creative direction faced unforeseen challenges and did not pan out exactly as planned, the obstacles encountered became opportunities to refine our strategy, push our creativity further, and explore alternative solutions. The collaboration significantly enhanced my practical expertise in critical design and production skills, such as Adobe InDesign, Photoshop, Illustrator, Branding & Identity, and Video Production. Moreover, I developed a deeper understanding of adhering to brand guidelines and maintaining visual consistency. Above all, this memorable project strengthened my adaptability, teamwork, and resilience, qualities that have proved invaluable in my professional growth and continue to inspire me today."
+  },
+  "VfxFive": {
+    "title": "Social issue: kidney failure patients",
+    "paragraph": "My journey as an Advertising Coordinator with Albir Society was profoundly meaningful, as I had the privilege of working closely with a charitable initiative dedicated to supporting patients battling kidney failure. Our primary mission involved connecting compassionate donors with patients who urgently required sponsorship for dialysis sessions—treatments that were essential yet highly expensive for both the charity dialysis center and the patients themselves. Many patients needed three to four sessions weekly, creating significant financial strain and logistical difficulties. Deeply moved by their resilience and determination, I conceptualized and produced a short, impactful video illustrating the immense challenges patients experienced in accessing timely dialysis treatments. Through authentic storytelling and compelling visuals, I aimed to foster greater public awareness and empathy. It was my sincere hope that this heartfelt portrayal would serve not only as a powerful reminder of the unseen struggles many people face daily but also inspire gratitude in each of us for the blessings we often take for granted, ultimately motivating viewers to extend their support to those in need."
+  },
+  "VfxSix": {
+    "title": "The Making of FineMark Workshop",
+    "paragraph": "One of the most memorable projects during my tenure was filming the \"Making of FineMark Workshop.\" This ambitious video spanned approximately six months, requiring dedicated filming across 5 to 8 days within three separate months. Each shoot day brought new experiences, challenges, and opportunities to capture intricate details and compelling behind-the-scenes moments that truly embodied the essence of FineMark’s meticulous craftsmanship and dedication. The editing process, though initially expected to be straightforward, turned out to be significantly more time-consuming due to simultaneous commitments to various other filming projects and the ongoing management and updates of our active social media accounts. Despite these demanding circumstances, the unwavering support, encouragement, and collaboration from the FineMark team enabled me to maintain focus and creatively overcome these hurdles. Ultimately, our collective determination and teamwork resulted in a video that vividly highlighted our shared passion and creativity, leaving a lasting impression on viewers and colleagues alike. I would not be able to make it happen without the help of my team, and I am grateful for their support and encouragement throughout this process."
+  },
+
 
   "BrandingProjects":{
     "title": "Branding & Digital Assets",
@@ -144,10 +170,23 @@
   "progress06": "Understanding Algorithms",
   "progress07": "Search Engine Optimization (SEO)"
 },
-"ContentOne":{
-    "title": "Branding: Pioneers",
-    "paragraph": "I’ve had the pleasure of collaborating with Pioneers to elevate their brand even further—spearheading a full identity rebrand and crafting a stronger online presence across their website and social media channels. Together, we’re refining every visual element and messaging touchpoint to reflect their spirit of innovation. This exciting marketing initiative is still underway, and I’m honored to help Pioneers shine as the go-to technology partner for ambitious visionaries."
-  },
+"ContentOne": {
+  "title": "SM Conent: Al-Faraidy Medical Center ",
+  "industry": "Market Industry: Healthcare",
+  "paragraph": "As a project manager overseeing social media for Al-Faraidy Medical Center (FNC), I've embraced a dynamic role that demands versatility, creativity, and precision. Wearing multiple hats, I've strategically developed compelling content aligned with FNC’s vision, proactively planning a month ahead to ensure seamless delivery. Each content piece goes through a meticulous process—beginning with conceptualization and declaration, securing approval via the Monday platform, and then moving into vibrant design and engaging animation stages. Another round of approval ensures alignment with client expectations before final scheduling for publication. Beyond these operational responsibilities, I've prioritized building and nurturing strong client relationships through regular meetings three to four times weekly. These interactions have not only sustained momentum but also deepened trust and collaboration, laying the groundwork for ongoing success."
+},
+  
+"ContentTwo": {
+  "title": "SM Conent: iBoat App",
+  "industry": "Market Industry: Tourism & Entertainment",
+  "paragraph": "In addition, managing projects for iBoat has been a rewarding experience that demanded teamwork and coordination. Together with my colleagues at Tajreed Agency, we successfully handled diverse tasks including social media content management, website management, and detailed video editing. Our collaborative effort significantly contributed to iBoat's remarkable achievement of securing first place in Monshaat’s startup competition, an accomplishment recognized and supported by the General Entertainment and Tourism Authority due to its alignment with Saudi Arabia’s Vision 2030. Leading and working alongside such a dedicated team has been a highlight of my career, showcasing the power of collective effort and innovation."
+},
+
+"ContentThree": {
+  "title": "SM Conent: FineMark Expo",
+    "industry": "Market Industry: Event Production",
+  "paragraph": "In February 2020, I embarked on an exciting journey as a Social Media Manager at FineMark Expo, a pioneering production company based in the Kingdom of Saudi Arabia. Specializing in temporary and semi-permanent event productions as well as permanent construction projects, FineMark Expo provided me with a vibrant canvas to unleash my creativity and strategic thinking. Tasked with launching and managing their social media platforms and overseeing website content, I embraced the challenge of capturing and sharing compelling visuals by filming numerous workshops and production events. When the unforeseen disruption of Covid-19 halted projects globally, I pivoted creatively, determined to sustain our digital presence. Through relentless effort, I produced valuable digital assets that continue to resonate and enhance the company’s brand image even today. This experience not only honed my resilience and adaptability but also laid a strong foundation for my passion for storytelling and impactful digital communication."
+},
 
 "ProgramingProjects": {
   "title": "Full Stack Software Developer",

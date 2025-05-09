@@ -12,7 +12,7 @@ export default function ProgramOne() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-3">
           {/* Column 1: Text */}
           <div className="flex flex-col space-y-2">
-            <h2 className="text-3xl font-bold mt-10">Project: Coffee Shop</h2>
+            <h2 className="text-3xl font-bold mt-10">Project: Coffee Shop ِApp</h2>
             <p className="text-sm text-gray-700 mb-4 mt-5">
               I'm thrilled to share a project that’s close to my heart — a
               full-stack Coffee Shop App designed to elevate the café experience
