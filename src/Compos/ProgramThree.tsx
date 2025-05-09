@@ -1,8 +1,11 @@
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
 
 export default function ProgramThree() {
+  const { t } = useTranslation();
+
   const [isOpen, setIsOpen] = useState(false);
   const imageUrl = "https://i.postimg.cc/y8C8GBmw/Measure-it-Page.png";
 
@@ -12,21 +15,16 @@ export default function ProgramThree() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-3">
           {/* Column 1: Text */}
           <div className="flex flex-col space-y-2">
-            <h2 className="text-3xl font-bold mt-10">Project: MeasureIt App</h2>
+            <h2 className="text-3xl font-bold mt-10">
+              {t("ProgramThree.title")}
+            </h2>
             <p className="text-sm text-gray-700 mb-4 mt-5">
-              MeasureIt is more than just a to-do list, it’s your daily
-              companion for turning intentions into action. Built on the idea
-              that “you can’t manage it without measuring it,” MeasureIt
-              empowers you to visualize progress, track completion, and build
-              momentum one task at a time. Its clean, elegant design and
-              intuitive interface turn productivity into a gratifying ritual.
-              Whether you're programming, working out, or finishing a portfolio,
-              MeasureIt helps you celebrate every small win; because progress
-              isn't just about getting things done, it's about seeing how far
-              you've come.
+              {t("ProgramThree.paragraph")}
             </p>
             <div className="flex justify-center">
-              <Button className="lg:w-1/3 md:w-1/2">View Project</Button>
+              <Button className="lg:w-1/3 md:w-1/2">
+                {t("ProgramThree.button")}
+              </Button>
             </div>
           </div>
 

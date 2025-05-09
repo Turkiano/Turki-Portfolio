@@ -199,6 +199,21 @@
   "progress05": "Postman",
   "progress06": "WordPress"
   
+},
+"ProgramOne": {
+  "title": "Project: Coffee Shop ِApp",
+  "paragraph": "I'm thrilled to share a project that’s close to my heart — a full-stack Coffee Shop App designed to elevate the café experience for both customers and staff. Every line of code was brewed with love (and lots of coffee ☕), and I’m proud of how this project brought together UI design, backend logic, database integration, and deployment in a real-world application.",
+  "button": "View Project"
+},
+"ProgramTwo": {
+  "title": "Project: Budget App",
+  "paragraph": "🚀 Budget App – built a modern Budget App with a focus on user experience, and clean architecture. The frontend was crafted using TypeScript and Shadcn UI, delivering a sleek, responsive interface that adapts beautifully across devices. For authentication, I implemented a robust signup and login system using C#, complete with a secure Email OTP verification flow to ensure safe access for users.",
+  "button": "View Project"
+},
+"ProgramThree": {
+  "title": "Project: MeasureIt App",
+  "paragraph": "MeasureIt is more than just a to-do list, it’s your daily companion for turning intentions into action. Built on the idea that “you can’t manage it without measuring it,” MeasureIt empowers you to visualize progress, track completion, and build momentum one task at a time. Its clean, elegant design and intuitive interface turn productivity into a gratifying ritual. Whether you're programming, working out, or finishing a portfolio, MeasureIt helps you celebrate every small win; because progress isn't just about getting things done, it's about seeing how far you've come.",
+  "button": "View Project"
 }
 
 

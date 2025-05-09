@@ -1,8 +1,11 @@
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
 
 export default function ProgramOne() {
+  const { t } = useTranslation();
+
   const [isOpen, setIsOpen] = useState(false);
   const imageUrl = "https://i.postimg.cc/1R0D1r5C/Coffee-Shop-page.png";
 
@@ -12,17 +15,16 @@ export default function ProgramOne() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-3">
           {/* Column 1: Text */}
           <div className="flex flex-col space-y-2">
-            <h2 className="text-3xl font-bold mt-10">Project: Coffee Shop ِApp</h2>
+            <h2 className="text-3xl font-bold mt-10">
+              {t("ProgramOne.title")}
+            </h2>
             <p className="text-sm text-gray-700 mb-4 mt-5">
-              I'm thrilled to share a project that’s close to my heart — a
-              full-stack Coffee Shop App designed to elevate the café experience
-              for both customers and staff. Every line of code was brewed with
-              love (and lots of coffee ☕), and I’m proud of how this project
-              brought together UI design, backend logic, database integration,
-              and deployment in a real-world application.
+              {t("ProgramOne.paragraph")}
             </p>
             <div className="flex justify-center">
-              <Button className="lg:w-1/3 md:w-1/2">View Project</Button>
+              <Button className="lg:w-1/3 md:w-1/2">
+                {t("ProgramOne.button")}
+              </Button>
             </div>
           </div>
 

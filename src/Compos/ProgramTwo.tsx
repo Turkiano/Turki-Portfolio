@@ -1,8 +1,11 @@
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
 
 export default function ProgramTwo() {
+  const { t } = useTranslation();
+
   const [isOpen, setIsOpen] = useState(false);
   const imageUrl = "https://i.postimg.cc/9QfBZFyd/Budget-App-page.png";
 
@@ -12,18 +15,16 @@ export default function ProgramTwo() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-3">
           {/* Column 1: Text */}
           <div className="flex flex-col space-y-2">
-            <h2 className="text-3xl font-bold mt-10">Project: Budget App</h2>
+            <h2 className="text-3xl font-bold mt-10">
+              {t("ProgramTwo.title")}
+            </h2>
             <p className="text-sm text-gray-700 mb-4 mt-5">
-              🚀 Budget App – built a modern Budget App with a focus on user
-              experience, and clean architecture. The frontend was crafted using
-              TypeScript and Shadcn UI, delivering a sleek, responsive interface
-              that adapts beautifully across devices. For authentication, I
-              implemented a robust signup and login system using C#, complete
-              with a secure Email OTP verification flow to ensure safe access
-              for users.
+              {t("ProgramTwo.paragraph")}
             </p>
             <div className="flex justify-center">
-              <Button className="lg:w-1/3 md:w-1/2">View Project</Button>
+              <Button className="lg:w-1/3 md:w-1/2">
+                {t("ProgramTwo.button")}
+              </Button>
             </div>
           </div>
 
