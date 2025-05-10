@@ -214,8 +214,45 @@
   "title": "Project: MeasureIt App",
   "paragraph": "MeasureIt is more than just a to-do list, it’s your daily companion for turning intentions into action. Built on the idea that “you can’t manage it without measuring it,” MeasureIt empowers you to visualize progress, track completion, and build momentum one task at a time. Its clean, elegant design and intuitive interface turn productivity into a gratifying ritual. Whether you're programming, working out, or finishing a portfolio, MeasureIt helps you celebrate every small win; because progress isn't just about getting things done, it's about seeing how far you've come.",
   "button": "View Project"
-}
+},
 
+
+  "ResearchProjects": {
+    "title": "Research & Analysis",
+    "paragraph": "My journey into research began in 2011 during my bachelor's studies, where a class on Research Methodology introduced me to the foundation of building and analyzing data. My final assignment explored \"The Influence of Music in Advertising\", a topic that opened my eyes to how researchers design real-life experiments that can span weeks, months, or even years. I learned how to paraphrase effectively, cite scholarly references, and structure findings in a compelling narrative. This initial exposure laid the groundwork for my passion in transforming raw data into meaningful insights.\n\n",
+    "paragraph02": "In 2013, I advanced my research capabilities during my MBA in Marketing with Multimedia, where numerous assignments deepened my understanding of research methodologies and information literacy—skills that taught me how to search, evaluate, and cite credible academic sources. A standout course, Quantitative Analysis, introduced me to the fundamentals of data mining, both in constructing primary data sets and leveraging secondary data. I also learned how to explore relationships between data points and interpret correlations with precision. Beyond the technical skills, my experience taught me how to manage research timelines, juggle multiple project stages, and collaborate within a supportive team and with mentors. Today, I take pride in not just analyzing data, but in presenting it as a compelling story, one that connects the dots and drives impactful decisions.",
+    "progress01": "Research Methodologies",
+    "progress02": "Excel for data",
+    "progress03": "Information Literacy",
+    "progress04": "Data Minner",
+    "progress05": "Data visualization",
+    "progress06": "SQL for data"
+  },
+  "ResearchOne": {
+  "title": "Real Estate in Saudi Arabia",
+  "paragraph": "In our pursuit of excellence and innovation within the Saudi real estate sector, we conducted a focused competitor analysis of three leading industry players: Al-Majdiah Residence, Sanadak, and Aqar App. These brands were selected for their strong market presence, recognizable digital footprints in the private sector, and consistent engagement with their audiences. Our research explored their branding approaches, user experience, social media strategies, and value propositions to understand what drives their success. By distilling insights from their strengths and identifying areas where we can differentiate, this analysis equips us with the clarity and inspiration needed to refine our positioning, enhance our digital strategy, and deliver a more compelling, customer-focused experience in an increasingly competitive market.",
+  "button": "View Project"
+},
+"ResearchTwo": {
+  "title": "Fintness in Saudi Arabia",
+  "paragraph": "As part of our commitment to redefining the fitness experience in Saudi Arabia, we conducted an in-depth competitor analysis of the country's leading organized fitness service providers. Among approximately 26 players in the market, we focused on the most influential brands—Fitness Time, Gold’s Gym, BodyMasters, Fitness First, World Gym, and B-it. These industry leaders set the standard in branding, membership models, digital engagement, and community building. By closely examining their offerings, marketing strategies, and customer touchpoints, we gained valuable insights into what drives loyalty and differentiation in the fitness space. This research not only highlights opportunities for innovation and growth but also inspires us to build a unique, high-impact strategy that resonates deeply with the evolving needs of today’s fitness-conscious consumer.",
+  "button": "View Project"
+},
+"ResearchThree": {
+  "title": "Furniture in Saudi Arabia",
+  "paragraph": "In an effort to strengthen digital presence and unify brand identity, a comprehensive performance study was conducted for a leading furniture company operating under two distinct social media accounts: Closet World and Creative Closet. This analysis explored both website and social media performance, focusing on user engagement, traffic patterns, content effectiveness, and conversion potential. By evaluating the strengths and challenges of each brand’s digital footprint, the study revealed key insights into audience behavior, content resonance, and opportunities for alignment. The findings serve as a strategic foundation for optimizing the company’s online presence, enhancing customer experience, and crafting a more cohesive and impactful digital strategy that reflects the brand’s creative vision and market potential.",
+  "button": "View Project"
+},
+"ResearchFour": {
+  "title": "International Schools in Riyadh",
+  "paragraph": "As part of a strategic initiative to elevate our social media presence, we conducted a comprehensive competitor analysis focused on the most prestigious and expensive international schools in Riyadh: Beach Hall School, King’s College School, British International School, American International School, and Misk Schools. This research examined their social media account performance across key platforms, analyzing content types, engagement rates, posting frequency, and audience interaction. By identifying trends, strengths, and content gaps in their digital strategies, we aim to develop a more targeted and impactful content approach that not only reflects our brand’s values but also resonates more effectively with our audience. This analysis serves as both a benchmark and a creative catalyst for crafting a distinctive, high-performing social media strategy.",
+  "button": "View Project"
+},
+"ResearchFive": {
+  "title": "MBA Final Project",
+  "paragraph": "My MBA final project, titled [Extrinsic Determinants of Economic Growth in ASEAN Countries], was a comparative research study focused on understanding the external factors influencing economic growth across five ASEAN nations. The objective was to examine the relationship between key extrinsic variables—labor force, capital, human capital, non-corruption, freedom, and conflict—and their impact on economic performance. Using 13 years of secondary data from 2000 to 2012, the study employed a quantitative approach to identify significant correlations. The findings supported five out of six hypotheses, revealing strong positive relationships between most variables and economic growth. This research not only contributes to academic understanding but also offers valuable insights for policymakers aiming to foster sustainable economic development in the ASEAN region.",
+  "button": "View Project"
+}
 
 
   }
