@@ -6,6 +6,7 @@ import Hero from "./Compos/Hero";
 import { ProjectsTaps } from "./Compos/ProjectsTaps";
 import { ContactMe } from "./Compos/ContactMe";
 import AboutMe from "./Compos/AboutMe";
+import Footer from "./Compos/Footer";
 
 //testing
 
@@ -22,7 +23,7 @@ function App() {
     <>
       <div className="overflow-x-hidden">
         <NavBar />
-        <div className="w-full pt-20">
+        <div id="hero" className="w-full pt-20">
           <Hero />
         </div>
 
@@ -65,6 +66,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

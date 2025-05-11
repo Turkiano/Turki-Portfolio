@@ -22,9 +22,14 @@ export default function ResearchTwo() {
               {t("ResearchTwo.paragraph")}
             </p>
             <div className="flex justify-center">
-              <Button className="lg:w-1/3 md:w-1/2">
-                {t("ResearchTwo.button")}
-              </Button>
+              <a
+                href="/Research/Fitness in KSA/Fitness Gym Social Media Strategy by Turki.pdf"
+                download
+              >
+                <Button className="lg:w-full md:w-1/2">
+                  {t("BrandOne.button")}
+                </Button>
+              </a>
             </div>
           </div>
 

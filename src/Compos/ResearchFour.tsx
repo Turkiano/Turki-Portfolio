@@ -22,9 +22,14 @@ export default function ResearchFour() {
               {t("ResearchFour.paragraph")}
             </p>
             <div className="flex justify-center">
-              <Button className="lg:w-1/3 md:w-1/2">
-                {t("ResearchFour.button")}
-              </Button>
+              <a
+                href="/Research/Intertational Schools in KSA/Market Research (Social Media Content Strategy).pdf"
+                download
+              >
+                <Button className="lg:w-full md:w-1/2">
+                  {t("BrandOne.button")}
+                </Button>
+              </a>
             </div>
           </div>
 

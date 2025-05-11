@@ -9,6 +9,10 @@ export default function ProgramOne() {
   const [isOpen, setIsOpen] = useState(false);
   const imageUrl = "https://i.postimg.cc/1R0D1r5C/Coffee-Shop-page.png";
 
+ const handleClick = () => {
+  window.location.href = "https://coffeeproject-eta.vercel.app";
+};
+
   return (
     <Card className="mt-3">
       <CardContent>
@@ -22,7 +26,7 @@ export default function ProgramOne() {
               {t("ProgramOne.paragraph")}
             </p>
             <div className="flex justify-center">
-              <Button className="lg:w-1/3 md:w-1/2">
+              <Button onClick={handleClick} className="lg:w-1/3 md:w-1/2">
                 {t("ProgramOne.button")}
               </Button>
             </div>

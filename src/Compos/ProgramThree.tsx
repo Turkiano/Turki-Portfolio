@@ -9,6 +9,10 @@ export default function ProgramThree() {
   const [isOpen, setIsOpen] = useState(false);
   const imageUrl = "https://i.postimg.cc/y8C8GBmw/Measure-it-Page.png";
 
+  const handleClick = () => {
+    window.location.href = "https://measure-it-app.vercel.app";
+  };
+
   return (
     <Card className="mt-3">
       <CardContent>
@@ -22,7 +26,7 @@ export default function ProgramThree() {
               {t("ProgramThree.paragraph")}
             </p>
             <div className="flex justify-center">
-              <Button className="lg:w-1/3 md:w-1/2">
+              <Button onClick={handleClick} className="lg:w-1/3 md:w-1/2">
                 {t("ProgramThree.button")}
               </Button>
             </div>

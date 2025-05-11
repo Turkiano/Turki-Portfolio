@@ -21,10 +21,15 @@ export default function ResearchThree() {
             <p className="text-sm text-gray-700 mb-4 mt-5">
               {t("ResearchThree.paragraph")}
             </p>
-            <div className="flex justify-center">
-              <Button className="lg:w-1/3 md:w-1/2">
-                {t("ResearchThree.button")}
-              </Button>
+           <div className="flex justify-center">
+              <a
+                href="/Research/Furnitures in KSA/ClosetsWorld Review_by Turki.pdf"
+                download
+              >
+                <Button className="lg:w-full md:w-1/2">
+                  {t("BrandOne.button")}
+                </Button>
+              </a>
             </div>
           </div>
 

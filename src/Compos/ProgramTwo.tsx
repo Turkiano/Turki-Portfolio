@@ -9,6 +9,10 @@ export default function ProgramTwo() {
   const [isOpen, setIsOpen] = useState(false);
   const imageUrl = "https://i.postimg.cc/9QfBZFyd/Budget-App-page.png";
 
+  const handleClick = () => {
+    window.location.href = "https://budget-app-frontend-coral.vercel.app";
+  };
+
   return (
     <Card className="mt-3">
       <CardContent>
@@ -22,7 +26,7 @@ export default function ProgramTwo() {
               {t("ProgramTwo.paragraph")}
             </p>
             <div className="flex justify-center">
-              <Button className="lg:w-1/3 md:w-1/2">
+              <Button onClick={handleClick} className="lg:w-1/3 md:w-1/2">
                 {t("ProgramTwo.button")}
               </Button>
             </div>

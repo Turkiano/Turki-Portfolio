@@ -7,7 +7,8 @@ export default function ResearchFive() {
   const { t } = useTranslation();
 
   const [isOpen, setIsOpen] = useState(false);
-  const imageUrl = "https://i.postimg.cc/nz1ShTmS/ASIAN-GDP-per-Capita-Growth-annual.png";
+  const imageUrl =
+    "https://i.postimg.cc/nz1ShTmS/ASIAN-GDP-per-Capita-Growth-annual.png";
 
   return (
     <Card className="mt-3">
@@ -22,9 +23,14 @@ export default function ResearchFive() {
               {t("ResearchFive.paragraph")}
             </p>
             <div className="flex justify-center">
-              <Button className="lg:w-1/3 md:w-1/2">
-                {t("ResearchFive.button")}
-              </Button>
+              <a
+                href="/Research/MBA final project/TURKI ABDUL RAHMAN.pdf"
+                download
+              >
+                <Button className="lg:w-full md:w-1/2">
+                  {t("BrandOne.button")}
+                </Button>
+              </a>
             </div>
           </div>
 
