@@ -22,15 +22,15 @@ function App() {
     <>
       <div className="overflow-x-hidden">
         <NavBar />
-        <div className="w-full ">
+        <div className="w-full pt-20">
           <Hero />
         </div>
 
-        <div>
+        <div id="about">
           <AboutMe />
         </div>
 
-        <div className="w-auto mx-auto text-center mt-10">
+        <div id="projects" className="w-auto mx-auto text-center mt-10">
           <h2 className="text-3xl font-bold ">{t("ProjectsTaps.title")}</h2>
           <p className="text-base leading-relaxed w-1/2 mx-auto pt-3 md: w-full">
             {t("ProjectsTaps.paragraph")}
@@ -47,7 +47,10 @@ function App() {
             </p>
           </div>
 
-          <div className="w-full sm:w-1/2 md:w-1/3 mx-auto text-center pt-5">
+          <div
+            id="contact"
+            className="w-full sm:w-1/2 md:w-1/3 mx-auto text-center pt-5"
+          >
             {" "}
             <ContactMe />
           </div>
