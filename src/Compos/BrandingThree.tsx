@@ -37,11 +37,13 @@ export default function BrandThree() {
             <p className="text-sm text-gray-700 mb-4">
               {t("BrandThree.paragraph")}
             </p>
-            <div className="flex justify-center">
-              <Button className="lg:w-1/3 md:w-1/2">
-                {t("BrandThree.button")}
-              </Button>
-            </div>{" "}
+            <div className="flex justify-center ">
+              <a href="/Branding/Modern LIGHTS GUIDE.pdf" download>
+                <Button className="lg:w-full md:w-1/2">
+                  {t("BrandOne.button")}
+                </Button>
+              </a>
+            </div>
           </div>
 
           {/* Column 3: Additional Logos */}

@@ -92,9 +92,11 @@ export default function BrandOne() {
               {t("BrandTwo.paragraph")}
             </p>
             <div className="flex justify-center">
-              <Button className="lg:w-1/3 md:w-1/2">
-                {t("BrandTwo.button")}
-              </Button>
+              <a href="/Branding/FNC - Brand Guideline 2023.pdf" download>
+                <Button className="lg:w-full md:w-1/2">
+                  {t("BrandOne.button")}
+                </Button>
+              </a>
             </div>
           </div>
 

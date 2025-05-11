@@ -37,10 +37,12 @@ export default function BrandOne() {
               {t("BrandOne.paragraph")}
             </p>
             <div className="flex justify-center">
-              <Button className="lg:w-1/3 md:w-1/2">
-                {t("BrandOne.button")}
-              </Button>
-            </div>{" "}
+              <a href="/Branding/Pioneers-Logo 2026.pdf" download>
+                <Button className="lg:w-full md:w-1/2">
+                  {t("BrandOne.button")}
+                </Button>
+              </a>
+            </div>
           </div>
 
           {/* Column 3: Additional Logos */}
