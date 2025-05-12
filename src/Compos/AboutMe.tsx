@@ -8,7 +8,6 @@ export default function AboutMe() {
   const isRtl = i18n.language === "ar";
   return (
     <div className="bg-gray-200 flex items-start justify-center p-4 md:p-8">
-      
       <div
         className="
          w-auto             /* only as wide as its columns */
@@ -18,7 +17,6 @@ export default function AboutMe() {
          items-start
        "
       >
-        
         {/* ─── COLUMN 1: PROFILE IMAGE ─── */}
         <div className="flex justify-center lg:justify-start">
           <div className="bg-gray-400 rounded-2xl p-1.5">
@@ -57,12 +55,14 @@ export default function AboutMe() {
               </a>
             </div>
             <div>
-            <h5
-               className={`
+              <h5
+                className={`
                  text-lg sm:text-xl md:text-2xl font-medium
                  ${isRtl ? "text-right" : "text-left"}
                `}
-             >                {t("about.CareerTitle")}
+              >
+                {" "}
+                {t("about.CareerTitle")}
               </h5>
             </div>
 
@@ -82,7 +82,7 @@ export default function AboutMe() {
 
             <div className="flex justify-center lg:justify-start pt-4">
               <a
-                href="/assets/Turki-Saeed-Resume.pdf"
+                href="/Resume/CV_TurkiSaeed_Marketing2026.pdf"
                 download
                 className="px-6 py-2 text-center font-semibold rounded-lg border border-gray-600 text-black hover:bg-gray-100"
               >
@@ -92,8 +92,7 @@ export default function AboutMe() {
           </div>
         </div>
         {/* ─── COLUMN 3: CHART ─── */}
-<div className="w-full md:h-[400px] self-center">
-          
+        <div className="w-full md:h-[400px] self-center">
           {/* ADDED self-center to balance vertical alignment */}
           <Chart />
         </div>
