@@ -7,8 +7,8 @@ export default function AboutMe() {
   const { t, i18n } = useTranslation();
   const isRtl = i18n.language === "ar";
   return (
-    <div className="bg-gray-200 min-h-screen flex items-start justify-center p-4 md:p-8">
-      {" "}
+    <div className="bg-gray-200 flex items-start justify-center p-4 md:p-8">
+      
       <div
         className="
          w-auto             /* only as wide as its columns */
@@ -18,7 +18,7 @@ export default function AboutMe() {
          items-start
        "
       >
-        {" "}
+        
         {/* ─── COLUMN 1: PROFILE IMAGE ─── */}
         <div className="flex justify-center lg:justify-start">
           <div className="bg-gray-400 rounded-2xl p-1.5">
@@ -92,8 +92,8 @@ export default function AboutMe() {
           </div>
         </div>
         {/* ─── COLUMN 3: CHART ─── */}
-        <div className="w-full  md:h-[400px] self-center">
-          {" "}
+<div className="w-full md:h-[400px] self-center">
+          
           {/* ADDED self-center to balance vertical alignment */}
           <Chart />
         </div>

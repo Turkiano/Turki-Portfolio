@@ -15,17 +15,83 @@ import { ChartContainer } from "@/components/ui/chart";
 // ─── 1) FULL DATASET ───────────────────────────────────────────────────────
 const raw = [
   { year: 2000, education: 0, career: 0 },
-  { year: 2005, education: 6, career: null,   eduPeriod: "2002 – 2005",   eduTitle: "Arabic High School" },
-  { year: 2007, education: 7, career: null,   eduPeriod: "2006 – 2007",   eduTitle: "English Course" },
-  { year: 2011, education: 8, career: null,   eduPeriod: "2007 – 2011",   eduTitle: "Bachelor Degree" },
-  { year: 2015, education: 9, career: null,   eduPeriod: "2013 – 2015",   eduTitle: "MBA" },
-  { year: 2024, education: 10, career: null,  eduPeriod: "Feb – May 2024", eduTitle: "Full-Stack Developer" },
-  { year: 2011, education: null, career: 6,  jobPeriod: "Feb – Apr 2011",  jobTitle: "VFX Artist" },
-  { year: 2012, education: null, career: 9,  jobPeriod: "Jun – Dec 2012",  jobTitle: "Assisting Production Manager" },
-  { year: 2018, education: null, career: 8,  jobPeriod: "Mar 2017 – Jan 2019", jobTitle: "Advertising Coordinator" },
-  { year: 2019, education: null, career: 7,  jobPeriod: "Mar – May 2019",  jobTitle: "Advertising Designer" },
-  { year: 2020, education: null, career: 10, jobPeriod: "Feb – Nov 2020",  jobTitle: "Social Media Manager" },
-  { year: 2022, education: null, career: 5,  jobPeriod: "Jun 2021 – March 2023", jobTitle: "Graphic Designer" },
+  {
+    year: 2005,
+    education: 6,
+    career: null,
+    eduPeriod: "2002 – 2005",
+    eduTitle: "Arabic High School",
+  },
+  {
+    year: 2007,
+    education: 7,
+    career: null,
+    eduPeriod: "2006 – 2007",
+    eduTitle: "English Course",
+  },
+  {
+    year: 2011,
+    education: 8,
+    career: null,
+    eduPeriod: "2007 – 2011",
+    eduTitle: "Bachelor Degree",
+  },
+  {
+    year: 2015,
+    education: 9,
+    career: null,
+    eduPeriod: "2013 – 2015",
+    eduTitle: "MBA",
+  },
+  {
+    year: 2024,
+    education: 10,
+    career: null,
+    eduPeriod: "Feb – May 2024",
+    eduTitle: "Full-Stack Developer",
+  },
+  {
+    year: 2011,
+    education: null,
+    career: 6,
+    jobPeriod: "Feb – Apr 2011",
+    jobTitle: "VFX Artist",
+  },
+  {
+    year: 2012,
+    education: null,
+    career: 9,
+    jobPeriod: "Jun – Dec 2012",
+    jobTitle: "Assisting Production Manager",
+  },
+  {
+    year: 2018,
+    education: null,
+    career: 8,
+    jobPeriod: "Mar 2017 – Jan 2019",
+    jobTitle: "Advertising Coordinator",
+  },
+  {
+    year: 2019,
+    education: null,
+    career: 7,
+    jobPeriod: "Mar – May 2019",
+    jobTitle: "Advertising Designer",
+  },
+  {
+    year: 2020,
+    education: null,
+    career: 10,
+    jobPeriod: "Feb – Nov 2020",
+    jobTitle: "Social Media Manager",
+  },
+  {
+    year: 2022,
+    education: null,
+    career: 5,
+    jobPeriod: "Jun 2021 – March 2023",
+    jobTitle: "Graphic Designer",
+  },
 ];
 
 // ─── 2) SORT CHRONOLOGICALLY ────────────────────────────────────────────────
@@ -36,24 +102,24 @@ export function Chart() {
   const [hover, setHover] = useState<any>(null);
 
   const startYear = 2000;
-  const endYear   = 2026;
+  const endYear = 2026;
 
   return (
-    <div className="w-full text-black p-6 rounded-lg">
+    <div className="w-full text-black px-4 pt-6 pb-2 sm:p-6 rounded-lg">
       <h2 className="text-2xl font-bold mb-1">
         {t("chart.title", { start: startYear, end: endYear })}
       </h2>
       <p className="text-gray-600 mb-4">{t("chart.subtitle")}</p>
 
       {/* 300px tall chart wrapper */}
-      <div className="h-[300px]">
+  <div className="h-[260px] sm:h-[300px]">
         {/* On mobile: pull 15px left; on sm+: reset to zero */}
-        <div className="ml-[-15px] sm:ml-0 h-full">
+        <div className="ml-[-30px] sm:ml-0 h-full">
           <ResponsiveContainer width="100%" height="100%">
             <ChartContainer
               config={{
                 education: { label: t("legend.education"), color: "#888888" },
-                career:    { label: t("legend.career"),    color: "#000000" },
+                career: { label: t("legend.career"), color: "#000000" },
               }}
             >
               <LineChart
@@ -74,9 +140,9 @@ export function Chart() {
                   axisLine={{ stroke: "#CCCCCC" }}
                   tickLine={{ stroke: "#CCCCCC" }}
                   label={{
-                    value:    t("axis.year"),
+                    value: t("axis.year"),
                     position: "bottom",
-                    fill:     "#333333",
+                    fill: "#333333",
                   }}
                 />
 
@@ -89,10 +155,10 @@ export function Chart() {
                   axisLine={{ stroke: "#CCCCCC" }}
                   tickLine={{ stroke: "#CCCCCC" }}
                   label={{
-                    value:    t("axis.rank"),
-                    angle:   -90,
-                    position:"insideLeft",
-                    fill:    "#333333",
+                    value: t("axis.rank"),
+                    angle: -90,
+                    position: "insideLeft",
+                    fill: "#333333",
                   }}
                 />
 
@@ -127,7 +193,10 @@ export function Chart() {
                 />
 
                 {/* Legend */}
-                <Legend verticalAlign="top" wrapperStyle={{ color: "#333333" }} />
+                <Legend
+                  verticalAlign="top"
+                  wrapperStyle={{ color: "#333333" }}
+                />
               </LineChart>
             </ChartContainer>
           </ResponsiveContainer>
@@ -141,15 +210,8 @@ function CustomTooltip({ active, payload }: any) {
   const { t } = useTranslation();
   if (!active || !payload?.length) return null;
 
-  const {
-    eduPeriod,
-    eduTitle,
-    education,
-    jobPeriod,
-    jobTitle,
-    career,
-    year,
-  } = payload[0].payload;
+  const { eduPeriod, eduTitle, education, jobPeriod, jobTitle, career, year } =
+    payload[0].payload;
 
   return (
     <div className="bg-white border border-gray-300 rounded-lg p-3 text-black">
@@ -163,9 +225,7 @@ function CustomTooltip({ active, payload }: any) {
           {t(`jobPeriods.${jobPeriod}`)} — {t(`jobTitles.${jobTitle}`)}
         </div>
       )}
-      <div className="text-xs text-gray-500">
-        {t("tooltip.year", { year })}
-      </div>
+      <div className="text-xs text-gray-500">{t("tooltip.year", { year })}</div>
     </div>
   );
 }
