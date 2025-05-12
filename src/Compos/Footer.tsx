@@ -6,7 +6,7 @@ export default function Footer() {
   const { t } = useTranslation();
 
   const links = [
-    { label: t("Footer.link01"), id: "home" },
+    { label: t("Footer.link01"), id: "hero" },
     { label: t("Footer.link02"), id: "about" },
     { label: t("Footer.link03"), id: "projects" },
     { label: t("Footer.link04"), id: "contact" },
