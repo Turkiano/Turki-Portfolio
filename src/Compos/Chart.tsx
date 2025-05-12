@@ -1,5 +1,4 @@
 // Chart.tsx
-import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import {
   Legend,
@@ -11,6 +10,7 @@ import {
   YAxis,
 } from "recharts";
 import { ChartContainer } from "@/components/ui/chart";
+import { useState } from "react";
 
 // ─── 1) FULL DATASET ───────────────────────────────────────────────────────
 const raw = [
@@ -99,7 +99,7 @@ const data = raw.slice().sort((a, b) => a.year - b.year);
 
 export function Chart() {
   const { t } = useTranslation();
-  const [hover, setHover] = useState<any>(null);
+  const [ setHover] = useState<any>(null);
 
   const startYear = 2000;
   const endYear = 2026;
