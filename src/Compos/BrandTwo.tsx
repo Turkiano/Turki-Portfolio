@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 
 export default function BrandOne() {
   const { t } = useTranslation();
@@ -12,6 +13,14 @@ export default function BrandOne() {
     { label: ["2nd", "gradient"], colors: ["37C3F4", "57DDD6"] },
     { label: ["3rd", "gradient"], colors: ["57DDD6", "00FFB5"] },
   ];
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState("");
+
+  const handleImageClick = (src: string) => {
+    setSelectedImage(src);
+    setIsOpen(true);
+  };
 
   return (
     <Card>
@@ -72,7 +81,6 @@ export default function BrandOne() {
                           background: `linear-gradient(to right, #${g.colors[0]} 0%, #${g.colors[1]} 100%)`,
                         }}
                       />
-
                       <span className="mt-1 text-xs font-mono text-center">
                         {g.label[0]}
                         <br />
@@ -100,23 +108,36 @@ export default function BrandOne() {
             </div>
           </div>
 
-          {/* Column 3: Additional Logos */}
+          {/* Column 3: Additional Logos with Modal */}
           <div className="flex justify-center items-center space-x-3">
-            <img
-              src="https://i.postimg.cc/pVFn6SrS/Story-FB-1080x1920-AR-09.jpg"
-              alt="FNC Design 01"
-              className="rounded-md w-31 h-auto"
-            />
-            <img
-              src="https://i.postimg.cc/sgmrD36N/Story-FB-1080x1920-AR-11.jpg"
-              alt="FNC Design 02"
-              className="rounded-md w-31 h-auto"
-            />
-            <img
-              src="https://i.postimg.cc/PrcDVkz0/Story-FB-1080x1920-AR-10.jpg"
-              alt="FNC Design 03"
-              className="rounded-md w-31 h-auto"
-            />
+            {[
+              "https://i.postimg.cc/pVFn6SrS/Story-FB-1080x1920-AR-09.jpg",
+              "https://i.postimg.cc/sgmrD36N/Story-FB-1080x1920-AR-11.jpg",
+              "https://i.postimg.cc/PrcDVkz0/Story-FB-1080x1920-AR-10.jpg",
+            ].map((src, index) => (
+              <img
+                key={index}
+                src={src}
+                alt={`FNC Design ${index + 1}`}
+                onClick={() => handleImageClick(src)}
+                className="rounded-md w-31 h-auto cursor-pointer hover:opacity-80 transition"
+              />
+            ))}
+
+            {/* Modal */}
+            {isOpen && (
+              <div
+                className="fixed inset-0 bg-black bg-opacity-10 flex items-center justify-center z-50"
+                onClick={() => setIsOpen(false)}
+              >
+                <img
+                  src={selectedImage}
+                  alt="Full-screen preview"
+                  className="max-w-full max-h-full object-contain"
+                  onClick={(e) => e.stopPropagation()}
+                />
+              </div>
+            )}
           </div>
         </div>
       </CardContent>

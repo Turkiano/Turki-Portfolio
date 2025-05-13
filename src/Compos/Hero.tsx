@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
   <Button
     size="lg"
     onClick={() => {
-      document.getElementById("projects`")?.scrollIntoView({ behavior: "smooth" });
+      document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
     }}
   >
     {t("hero.primaryAction")}

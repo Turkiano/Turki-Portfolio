@@ -1,10 +1,19 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 
 export default function BrandThree() {
   const colors = ["09478f", "65c4ea", "3f3c39"];
   const { t } = useTranslation();
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState("");
+
+  const handleImageClick = (src: string) => {
+    setSelectedImage(src);
+    setIsOpen(true);
+  };
 
   return (
     <Card>
@@ -45,24 +54,36 @@ export default function BrandThree() {
             </div>
           </div>
 
-          {/* Column 3: Additional Logos */}
-          {/* Column 3: Additional Logos in a row */}
+          {/* Column 3: Additional Logos with Modal */}
           <div className="flex justify-center items-center space-x-3">
-            <img
-              src="https://i.postimg.cc/LXpLxjfJ/Hip-Abduction-pillow.png"
-              alt="Medcial Lights design 02"
-              className="rounded-md w-35 h-auto"
-            />
-            <img
-              src="https://i.postimg.cc/fTpZ4Cbg/Casting-Tape.png"
-              alt="Medcial Lights design 03"
-              className="rounded-md w-35 h-auto"
-            />
-            <img
-              src="https://i.postimg.cc/bw0zQbzC/Cardboard-Brochure.png"
-              alt="Medcial Lights design 04"
-              className="rounded-md w-35 h-auto"
-            />
+            {[
+              "https://i.postimg.cc/LXpLxjfJ/Hip-Abduction-pillow.png",
+              "https://i.postimg.cc/fTpZ4Cbg/Casting-Tape.png",
+              "https://i.postimg.cc/bw0zQbzC/Cardboard-Brochure.png",
+            ].map((src, index) => (
+              <img
+                key={index}
+                src={src}
+                alt={`Medical Lights design ${index + 1}`}
+                onClick={() => handleImageClick(src)}
+                className="rounded-md w-35 h-auto cursor-pointer hover:opacity-80 transition"
+              />
+            ))}
+
+            {/* Modal */}
+            {isOpen && (
+              <div
+                className="fixed inset-0 bg-black bg-opacity-10 flex items-center justify-center z-50"
+                onClick={() => setIsOpen(false)}
+              >
+                <img
+                  src={selectedImage}
+                  alt="Full-screen preview"
+                  className="max-w-full max-h-full object-contain"
+                  onClick={(e) => e.stopPropagation()}
+                />
+              </div>
+            )}
           </div>
         </div>
       </CardContent>

@@ -8,6 +8,8 @@ import {
   Tooltip,
   XAxis,
   YAxis,
+  ReferenceLine,
+  ReferenceDot,
 } from "recharts";
 import { ChartContainer } from "@/components/ui/chart";
 import { useState } from "react";
@@ -99,7 +101,7 @@ const data = raw.slice().sort((a, b) => a.year - b.year);
 
 export function Chart() {
   const { t } = useTranslation();
-  const [ setHover] = useState<any>(null);
+  const [setHover] = useState<any>(null);
 
   const startYear = 2000;
   const endYear = 2026;
@@ -111,9 +113,7 @@ export function Chart() {
       </h2>
       <p className="text-gray-600 mb-4">{t("chart.subtitle")}</p>
 
-      {/* 300px tall chart wrapper */}
-  <div className="h-[260px] sm:h-[300px]">
-        {/* On mobile: pull 15px left; on sm+: reset to zero */}
+      <div className="h-[260px] sm:h-[300px]">
         <div className="ml-[-30px] sm:ml-0 h-full">
           <ResponsiveContainer width="100%" height="100%">
             <ChartContainer
@@ -184,6 +184,23 @@ export function Chart() {
                   dot={{ r: 4, fill: "#FFFFFF", stroke: "#000000" }}
                   activeDot={{ r: 6, fill: "#000000", stroke: "#000000" }}
                   connectNulls
+                />
+
+                {/* Promotion dashed segment (half-height) */}
+                <ReferenceLine
+                  segment={[{ x: 2022, y: 10 }, { x: 2022, y: 5 }]}
+                  stroke="#00C853"
+                  strokeWidth={2}
+                  strokeDasharray="4 4"
+                />
+
+                {/* Promotion marker dot */}
+                <ReferenceDot
+                  x={2022}
+                  y={10}
+                  r={5}
+                  fill="#00C853"
+                  stroke="#00C853"
                 />
 
                 {/* Tooltip */}
