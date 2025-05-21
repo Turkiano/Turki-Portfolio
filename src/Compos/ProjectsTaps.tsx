@@ -11,7 +11,7 @@ export function ProjectsTaps() {
 
   return (
     <Tabs defaultValue="Branding" className="w-full mx-auto mt-5">
-      <TabsList className="flex justify-center space-x-4 w-auto mx-auto">
+      <TabsList className="flex justify-center space-x-4 w-auto mx-auto sticky top-0 z-50 bg-stone-200 dark:bg-gray-800 shadow border-b border-gray-300 dark:border-gray-700">
         <TabsTrigger value="Branding"> {t("ProjectsTaps.tap01")}</TabsTrigger>
         <TabsTrigger value="Research">
           {t("ProjectsTaps.tap02")}

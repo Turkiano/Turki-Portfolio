@@ -35,23 +35,23 @@ function App() {
             {t("ProjectsTaps.paragraph")}
             <br />
           </p>
-          <ProjectsTaps />
+          <div className="relative max-h-[80vh] overflow-y-auto">
+            <ProjectsTaps />
+          </div>
         </div>
         <div className="w-full bg-gray-100 p-5 mt-10">
-  <div className="w-11/12 sm:w-1/2 mx-auto text-center">
-    <h2 className="text-xl sm:text-3xl font-bold">
-      {t("Contact.title")}
-    </h2>
-    <p className="text-sm sm:text-base w-full">
-      {t("Contact.paragraph01")}
-    </p>
-    <p className="text-sm sm:text-base">
-      {t("Contact.paragraph02")}
-    </p>
-  </div>
-</div>
+          <div className="w-11/12 sm:w-1/2 mx-auto text-center">
+            <h2 className="text-xl sm:text-3xl font-bold">
+              {t("Contact.title")}
+            </h2>
+            <p className="text-sm sm:text-base w-full">
+              {t("Contact.paragraph01")}
+            </p>
+            <p className="text-sm sm:text-base">{t("Contact.paragraph02")}</p>
+          </div>
+        </div>
 
-          {/* 
+        {/* 
           <div
            
             className="w-full sm:w-1/2 md:w-1/3 mx-auto text-center pt-5"
@@ -59,7 +59,7 @@ function App() {
             {" "}
             <ContactMe />
           </div> */}
-        </div>
+      </div>
       <div id="contact">
         <Footer />
       </div>
