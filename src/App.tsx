@@ -35,9 +35,8 @@ function App() {
             {t("ProjectsTaps.paragraph")}
             <br />
           </p>
-          <div className="relative max-h-[80vh] overflow-y-auto">
-            <ProjectsTaps />
-          </div>
+
+          <ProjectsTaps />
         </div>
         <div className="w-full bg-gray-100 p-5 mt-10">
           <div className="w-11/12 sm:w-1/2 mx-auto text-center">
